@@ -61,5 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
         manager.beginTransaction().replace(R.id.fullscreen_content, quizFragment).commit();
     }
-
 }
+
+//TODO
+
+//Make shuffle for x questions only, no need to shuffle more questions than needed.

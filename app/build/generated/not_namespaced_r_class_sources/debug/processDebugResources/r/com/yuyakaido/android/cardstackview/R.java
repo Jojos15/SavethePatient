@@ -34,8 +34,8 @@ public final class R {
         public static final int freedom = 0x7f07003e;
         public static final int freedom_no_bottom = 0x7f07003f;
         public static final int horizontal = 0x7f070044;
-        public static final int top = 0x7f070094;
-        public static final int vertical = 0x7f07009f;
+        public static final int top = 0x7f070095;
+        public static final int vertical = 0x7f0700a0;
     }
     public static final class layout {
         private layout() {}

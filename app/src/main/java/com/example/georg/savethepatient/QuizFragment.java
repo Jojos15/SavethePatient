@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.ami.fundapter.BindDictionary;
 import com.ami.fundapter.FunDapter;
@@ -24,6 +25,7 @@ public class QuizFragment extends Fragment {
 
     CardStackView cardStackView;
     ArrayList<Question> questions;
+    ProgressBar progressBar;
 
 
     public QuizFragment() {
@@ -42,20 +44,13 @@ public class QuizFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         cardStackView = view.findViewById(R.id.quiz_main_card_stack_view);
+        progressBar = view.findViewById(R.id.progressBar2);
+        progressBar.setVisibility(View.VISIBLE);
         questions = new ArrayList<>();
         QuestionLoader questionLoader = new QuestionLoader(getContext());
+        questions = questionLoader.getQuestionsList(1);
+        progressBar.setVisibility(View.GONE);
 
-        String[] temp = {"Απάντηση 1", "Απάντηση 2", "Απάντηση 3", "Απάντηση 4"};
-        questions.add(new Question("Ερώτηση 1", temp));
-        questions.add(new Question("Ερώτηση 2", temp));
-        questions.add(new Question("Ερώτηση 3", temp));
-        questions.add(new Question("Ερώτηση 4", temp));
-        questions.add(new Question("Ερώτηση 5", temp));
-        questions.add(new Question("Ερώτηση 6", temp));
-        questions.add(new Question("Ερώτηση 7", temp));
-        questions.add(new Question("Ερώτηση 8", temp));
-        questions.add(new Question("Ερώτηση 9", temp));
-        questions.add(new Question("Ερώτηση 10", temp));
 
         BindDictionary<Question> bindDictionary = new BindDictionary<>();
 
