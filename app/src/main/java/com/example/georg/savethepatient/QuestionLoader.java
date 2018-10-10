@@ -97,6 +97,7 @@ public class QuestionLoader {
         Random random = new Random();
         ArrayList<Question> temp = new ArrayList<>();
         ArrayList<Integer> positions = new ArrayList<>();
+        int counter = 0;
         for (int i = 0; i < questions.size(); i++) {
             positions.add(i);
         }
@@ -104,10 +105,10 @@ public class QuestionLoader {
             int pos = random.nextInt(positions.size());
             temp.add(shuffleAnswers(questions.get(positions.get(pos))));
             positions.remove(pos);
-            if(count==5){
+            if(counter==count){
                 break;
             }
-            else count++;
+            else counter++;
         }
         return temp;
     }
