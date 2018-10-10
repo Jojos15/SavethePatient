@@ -63,6 +63,5 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-//TODO
-
-//Make shuffle for x questions only, no need to shuffle more questions than needed.
+//TODO: Calculate implications, make a case for that
+//TODO: Rounded corners for questions

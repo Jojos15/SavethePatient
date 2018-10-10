@@ -137,13 +137,13 @@
                 android:paddingRight="16dp"
                 android:paddingBottom="32dp"
                 app:elevationEnabled="true"
-                app:scaleDiff="0.02"
+                app:scaleDiff="0.5"
                 app:stackFrom="top"
-                app:swipeDirection="freedom_no_bottom"
+                app:swipeDirection="freedom"
                 app:swipeEnabled="true"
                 app:swipeThreshold="0.75"
                 app:translationDiff="12"
-                app:visibleCount="3" />
+                app:visibleCount="2" />
 
         </TableRow>
 
