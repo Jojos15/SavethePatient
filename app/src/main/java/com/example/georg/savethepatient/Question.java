@@ -12,6 +12,10 @@ public class Question {
         this.type = type;
     }
 
+    public Question(String quest){
+
+    }
+
     public String getQuest() {
         return quest;
     }
@@ -21,6 +25,9 @@ public class Question {
     }
 
     public String getAnswers(int index) {
+        if(answers==null){
+            return null;
+        }
         return answers[index];
     }
 
