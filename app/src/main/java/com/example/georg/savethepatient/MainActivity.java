@@ -10,6 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private QuizFragment quizFragment;
     private FragmentManager manager;
 
@@ -61,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
         manager.beginTransaction().replace(R.id.fullscreen_content, quizFragment).commit();
     }
+
+
 }
 
 //TODO: Calculate implications, make a case for that

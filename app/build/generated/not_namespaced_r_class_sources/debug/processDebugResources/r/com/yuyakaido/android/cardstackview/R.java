@@ -13,17 +13,17 @@ public final class R {
         private attr() {}
 
         public static final int bottomOverlay = 0x7f020038;
-        public static final int elevationEnabled = 0x7f020072;
-        public static final int leftOverlay = 0x7f020098;
-        public static final int rightOverlay = 0x7f0200c4;
-        public static final int scaleDiff = 0x7f0200c5;
-        public static final int stackFrom = 0x7f0200d6;
-        public static final int swipeDirection = 0x7f0200e0;
-        public static final int swipeEnabled = 0x7f0200e1;
-        public static final int swipeThreshold = 0x7f0200e2;
-        public static final int topOverlay = 0x7f02010b;
-        public static final int translationDiff = 0x7f02010f;
-        public static final int visibleCount = 0x7f020112;
+        public static final int elevationEnabled = 0x7f020085;
+        public static final int leftOverlay = 0x7f0200ab;
+        public static final int rightOverlay = 0x7f0200d7;
+        public static final int scaleDiff = 0x7f0200d8;
+        public static final int stackFrom = 0x7f0200e9;
+        public static final int swipeDirection = 0x7f0200f3;
+        public static final int swipeEnabled = 0x7f0200f4;
+        public static final int swipeThreshold = 0x7f0200f5;
+        public static final int topOverlay = 0x7f02011e;
+        public static final int translationDiff = 0x7f020122;
+        public static final int visibleCount = 0x7f020125;
     }
     public static final class id {
         private id() {}
@@ -34,8 +34,8 @@ public final class R {
         public static final int freedom = 0x7f07003e;
         public static final int freedom_no_bottom = 0x7f07003f;
         public static final int horizontal = 0x7f070044;
-        public static final int top = 0x7f070095;
-        public static final int vertical = 0x7f0700a1;
+        public static final int top = 0x7f070098;
+        public static final int vertical = 0x7f0700a4;
     }
     public static final class layout {
         private layout() {}
@@ -51,7 +51,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] CardStackView = { 0x7f020038, 0x7f020072, 0x7f020098, 0x7f0200c4, 0x7f0200c5, 0x7f0200d6, 0x7f0200e0, 0x7f0200e1, 0x7f0200e2, 0x7f02010b, 0x7f02010f, 0x7f020112 };
+        public static final int[] CardStackView = { 0x7f020038, 0x7f020085, 0x7f0200ab, 0x7f0200d7, 0x7f0200d8, 0x7f0200e9, 0x7f0200f3, 0x7f0200f4, 0x7f0200f5, 0x7f02011e, 0x7f020122, 0x7f020125 };
         public static final int CardStackView_bottomOverlay = 0;
         public static final int CardStackView_elevationEnabled = 1;
         public static final int CardStackView_leftOverlay = 2;

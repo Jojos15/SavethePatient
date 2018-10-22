@@ -80,6 +80,13 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cardBackgroundColor
+attr cardCornerRadius
+attr cardElevation
+attr cardMaxElevation
+attr cardPreventCornerOverlap
+attr cardUseCompatPadding
+attr cardViewStyle
 attr checkboxStyle
 attr checkedTextViewStyle
 attr closeIcon
@@ -105,8 +112,20 @@ attr contentInsetLeft
 attr contentInsetRight
 attr contentInsetStart
 attr contentInsetStartWithNavigation
+attr contentPadding
+attr contentPaddingBottom
+attr contentPaddingLeft
+attr contentPaddingRight
+attr contentPaddingTop
 attr controlBackground
 attr coordinatorLayoutStyle
+attr cpb_background_progressbar_color
+attr cpb_background_progressbar_width
+attr cpb_indeterminate_mode
+attr cpb_progress
+attr cpb_progress_max
+attr cpb_progressbar_color
+attr cpb_progressbar_width
 attr customNavigationLayout
 attr defaultQueryHint
 attr dialogCornerRadius
@@ -339,9 +358,14 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cardview_dark_background
+color cardview_light_background
+color cardview_shadow_end_color
+color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color dark_grey
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -352,6 +376,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color holo_purple
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -389,6 +414,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -465,6 +491,9 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen cardview_compat_inset_shadow
+dimen cardview_default_elevation
+dimen cardview_default_radius
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -472,6 +501,8 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
+dimen default_background_stroke_width
+dimen default_stroke_width
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen highlight_alpha_material_colored
@@ -592,7 +623,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ic_alpha
+drawable ic_beta
+drawable ic_broken_heart
 drawable ic_cake_black_24dp
+drawable ic_delta
+drawable ic_gamma
+drawable ic_heart
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -607,6 +644,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_corners_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -750,11 +788,14 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textViewA
 id textViewC
+id textViewD
 id textViewStableA
 id textViewStableB
 id textViewStableC
 id textViewStableD
+id textViewÂ
 id time
+id timerTimeText
 id title
 id titleDividerNoCustom
 id title_template
@@ -826,6 +867,10 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout overlay_bottom
+layout overlay_left
+layout overlay_right
+layout overlay_top
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -891,6 +936,7 @@ style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
 style Base_Animation_AppCompat_DropDownUp
 style Base_Animation_AppCompat_Tooltip
+style Base_CardView
 style Base_DialogWindowTitle_AppCompat
 style Base_DialogWindowTitleBackground_AppCompat
 style Base_TextAppearance_AppCompat
@@ -1041,6 +1087,9 @@ style Base_Widget_AppCompat_Spinner_Underlined
 style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
+style CardView
+style CardView_Dark
+style CardView_Light
 style FullscreenActionBarStyle
 style FullscreenTheme
 style Platform_AppCompat
@@ -1252,6 +1301,8 @@ styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle a
 styleable ButtonBarContainerTheme metaButtonBarButtonStyle metaButtonBarStyle
 styleable ButtonBarLayout allowStacking
 styleable CardStackView bottomOverlay elevationEnabled leftOverlay rightOverlay scaleDiff stackFrom swipeDirection swipeEnabled swipeThreshold topOverlay translationDiff visibleCount
+styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
+styleable CircularProgressBar cpb_background_progressbar_color cpb_background_progressbar_width cpb_indeterminate_mode cpb_progress cpb_progress_max cpb_progressbar_color cpb_progressbar_width
 styleable ColorStateListItem android_color android_alpha alpha
 styleable CompoundButton android_button buttonTint buttonTintMode
 styleable CoordinatorLayout keylines statusBarBackground

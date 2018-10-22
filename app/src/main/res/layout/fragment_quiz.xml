@@ -21,6 +21,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/dark_grey"
         android:orientation="vertical"
         android:weightSum="100">
 
@@ -30,12 +31,14 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="15">
+            android:layout_weight="15"
+            android:elevation="8dp">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="15">
+                android:layout_weight="15"
+                android:elevation="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,7 +55,8 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="TextView"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/tvQuestionNu"
@@ -62,17 +66,35 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="TextView"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
                 </LinearLayout>
-
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    android:layout_width="match_parent"
+                <RelativeLayout
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:max="100"
-                    android:progress="100" />
+                    android:layout_width="match_parent"
+                    android:layout_weight="1">
 
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="11dp"
+                        android:foregroundGravity="center"
+                        android:layout_centerInParent="true"
+                        android:progress="0"
+                        app:cpb_background_progressbar_color="#FFCDD2"
+                        app:cpb_background_progressbar_width="0dp"
+                        app:cpb_progress_max="100"
+                        app:cpb_progressbar_color="#F44336"
+                        app:cpb_progressbar_width="3dp" />
+
+                    <TextView
+                        android:id="@+id/timerTimeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -117,7 +139,8 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Α"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/white" />
         </TableRow>
 
         <TableRow
@@ -126,24 +149,48 @@
             android:layout_weight="70"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Δ"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
             <com.yuyakaido.android.cardstackview.CardStackView
                 android:id="@+id/quiz_main_card_stack_view"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@color/white"
                 android:clipToPadding="false"
-                android:paddingLeft="16dp"
-                android:paddingTop="32dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="32dp"
-                app:elevationEnabled="false"
-                app:scaleDiff="0.01"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:elevationEnabled="true"
+                app:scaleDiff="0.1"
                 app:stackFrom="top"
                 app:swipeDirection="freedom"
                 app:swipeEnabled="true"
-                app:swipeThreshold="0.75"
+                app:swipeThreshold="0.90"
+                android:layout_weight="10"
                 app:translationDiff="12"
+                app:leftOverlay="@layout/overlay_left"
+                app:bottomOverlay="@layout/overlay_bottom"
+                app:rightOverlay="@layout/overlay_right"
+                app:topOverlay="@layout/overlay_top"
                 app:visibleCount="2" />
+
+            <TextView
+                android:id="@+id/textViewΒ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="B"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
         </TableRow>
 
@@ -151,6 +198,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
+            android:elevation="8dp"
             android:orientation="horizontal">
 
             <TextView
@@ -160,13 +208,15 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="Γ"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="@color/white" />
         </TableRow>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
+            android:elevation="8dp"
             android:orientation="horizontal">
 
         </LinearLayout>
