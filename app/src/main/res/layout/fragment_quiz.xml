@@ -55,7 +55,7 @@
                         android:textAlignment="center" />
 
                     <TextView
-                        android:id="@+id/tvQuestion"
+                        android:id="@+id/tvQuestionNu"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_gravity="center"

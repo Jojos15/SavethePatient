@@ -748,12 +748,12 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView10
-id textView7
-id textView8
-id textView9
 id textViewA
 id textViewC
+id textViewStableA
+id textViewStableB
+id textViewStableC
+id textViewStableD
 id time
 id title
 id titleDividerNoCustom
@@ -766,6 +766,7 @@ id tvAnswerC
 id tvAnswerD
 id tvLevel
 id tvQuestion
+id tvQuestionNu
 id uniform
 id up
 id useLogo

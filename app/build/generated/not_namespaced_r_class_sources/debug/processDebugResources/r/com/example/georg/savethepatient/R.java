@@ -2669,12 +2669,12 @@ public final class R {
     public static final int text2=0x7f070088;
     public static final int textSpacerNoButtons=0x7f070089;
     public static final int textSpacerNoTitle=0x7f07008a;
-    public static final int textView10=0x7f07008b;
-    public static final int textView7=0x7f07008c;
-    public static final int textView8=0x7f07008d;
-    public static final int textView9=0x7f07008e;
-    public static final int textViewA=0x7f07008f;
-    public static final int textViewC=0x7f070090;
+    public static final int textViewA=0x7f07008b;
+    public static final int textViewC=0x7f07008c;
+    public static final int textViewStableA=0x7f07008d;
+    public static final int textViewStableB=0x7f07008e;
+    public static final int textViewStableC=0x7f07008f;
+    public static final int textViewStableD=0x7f070090;
     public static final int time=0x7f070091;
     public static final int title=0x7f070092;
     public static final int titleDividerNoCustom=0x7f070093;
@@ -2687,12 +2687,13 @@ public final class R {
     public static final int tvAnswerD=0x7f07009a;
     public static final int tvLevel=0x7f07009b;
     public static final int tvQuestion=0x7f07009c;
-    public static final int uniform=0x7f07009d;
-    public static final int up=0x7f07009e;
-    public static final int useLogo=0x7f07009f;
-    public static final int vertical=0x7f0700a0;
-    public static final int withText=0x7f0700a1;
-    public static final int wrap_content=0x7f0700a2;
+    public static final int tvQuestionNu=0x7f07009d;
+    public static final int uniform=0x7f07009e;
+    public static final int up=0x7f07009f;
+    public static final int useLogo=0x7f0700a0;
+    public static final int vertical=0x7f0700a1;
+    public static final int withText=0x7f0700a2;
+    public static final int wrap_content=0x7f0700a3;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;

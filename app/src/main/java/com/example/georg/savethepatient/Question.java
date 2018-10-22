@@ -5,6 +5,7 @@ public class Question {
     private String quest;
     private String[] answers;
     private int[] type;
+    private boolean hasAnswers = true;
 
     public Question(String quest, String[] answers, int[] type){
         this.quest = quest;
@@ -13,7 +14,7 @@ public class Question {
     }
 
     public Question(String quest){
-
+        this.hasAnswers = false;
     }
 
     public String getQuest() {
@@ -37,6 +38,10 @@ public class Question {
 
     public int getType(int index){
         return type[index];
+    }
+
+    public boolean isHasAnswers() {
+        return hasAnswers;
     }
 
     public void setType(int[] type) {

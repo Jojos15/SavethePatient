@@ -1,18 +1,22 @@
 package com.example.georg.savethepatient;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.ami.fundapter.BindDictionary;
 import com.ami.fundapter.FunDapter;
 import com.ami.fundapter.FunDapterUtils;
+import com.ami.fundapter.extractors.BooleanExtractor;
 import com.ami.fundapter.extractors.StringExtractor;
 import com.ami.fundapter.interfaces.FunDapterFilter;
 import com.yuyakaido.android.cardstackview.CardStackView;
@@ -47,7 +51,7 @@ public class QuizFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         cardStackView = view.findViewById(R.id.quiz_main_card_stack_view);
         progressBar = view.findViewById(R.id.progressBar2);
@@ -89,6 +93,34 @@ public class QuizFragment extends Fragment {
                 return item.getAnswers(3);
             }
         });
+        bindDictionary.addStringField(R.id.textViewStableA, new StringExtractor<Question>() {
+            @Override
+            public String getStringValue(Question item, int position) {
+                if (item.isHasAnswers()) return "Α.";
+                return null;
+            }
+        });
+        bindDictionary.addStringField(R.id.textViewStableB, new StringExtractor<Question>() {
+            @Override
+            public String getStringValue(Question item, int position) {
+                if (item.isHasAnswers()) return "Β.";
+                return null;
+            }
+        });
+        bindDictionary.addStringField(R.id.textViewStableC, new StringExtractor<Question>() {
+            @Override
+            public String getStringValue(Question item, int position) {
+                if (item.isHasAnswers()) return "Γ.";
+                return null;
+            }
+        });
+        bindDictionary.addStringField(R.id.textViewStableD, new StringExtractor<Question>() {
+            @Override
+            public String getStringValue(Question item, int position) {
+                if (item.isHasAnswers()) return "Δ.";
+                return null;
+            }
+        });
 
         final FunDapter funDapter = new FunDapter(getContext(), questions, R.layout.card_layout, bindDictionary);
 
@@ -103,14 +135,18 @@ public class QuizFragment extends Fragment {
 
             @Override
             public void onCardSwiped(SwipeDirection direction) {
-                if(cardCount % 2 == 0){
-                    if(questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.RIGHT){
+                View v = funDapter.getView(1, null, null);
+                if (cardCount % 2 == 0) {
+                    if (questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.RIGHT) {
                         questions.get(1).setQuest("Σωστό");
+                    } else {
+                        questions.get(1).setQuest("Λάθος");
+
                     }
-                    else questions.get(1).setQuest("Λάθος");
+
                 }
-                    questions.remove(0);
-                    funDapter.updateData(questions);
+                questions.remove(0);
+                funDapter.updateData(questions);
                 cardCount++;
             }
 
@@ -132,11 +168,11 @@ public class QuizFragment extends Fragment {
 
     }
 
-    private void loadLevel(int level){
+    private void loadLevel(int level) {
         progressBar.setVisibility(View.VISIBLE);
         questions = questionLoader.getQuestionsList(level);
         ArrayList<Question> temp = new ArrayList<>();
-        for(Question q: questions){
+        for (Question q : questions) {
             temp.add(q);
             temp.add(new Question(""));
         }
@@ -144,8 +180,8 @@ public class QuizFragment extends Fragment {
         progressBar.setVisibility(View.GONE);
     }
 
-    private int numberfyDirection(SwipeDirection direction){
-        if(direction == SwipeDirection.Top) return 0;
+    private int numberfyDirection(SwipeDirection direction) {
+        if (direction == SwipeDirection.Top) return 0;
         else if (direction == SwipeDirection.Right) return 1;
         else if (direction == SwipeDirection.Bottom) return 2;
         else return 3;
