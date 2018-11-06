@@ -8,6 +8,7 @@ import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -45,13 +46,15 @@ public class QuizFragment extends Fragment {
     private CircularProgressBar timer;
     private TextView timerText;
     private int progressI = 0;
+    private int levelTime;
+    private int level;
+    private TextView tvOverallTime;
     private CountDownTimer countDownTimer = new CountDownTimer(45000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
             progressI++;
-            timerText.setText((45-progressI) +"");
+            timerText.setText((levelTime-progressI) +"");
             timer.setProgress((int) progressI * 100 / (45000 / 1000));
-            Log.d("Mills unt fin", millisUntilFinished + "");
         }
 
         @Override
@@ -62,9 +65,46 @@ public class QuizFragment extends Fragment {
         }
     };
 
+    final Handler handler = new Handler();
+    Runnable runnable = new Runnable() {
+
+        @Override
+        public void run() {
+            try{
+                long raw = ((MainActivity)getActivity()).getTimeInSeconds();
+                long min = raw/60;
+                long secs = raw % 60;
+                String seconds;
+                String minutes;
+
+                if(secs<10) seconds = "0" + Long.toString(secs);
+                else seconds = Long.toString(secs);
+
+                if(min<10) minutes = "0" + Long.toString(min);
+                else minutes = Long.toString(min);
+
+                tvOverallTime.setText(minutes + ":" + seconds);
+            }
+            catch (Exception e) {
+                // TODO: handle exception
+            }
+            finally{
+                //also call the same runnable to call it at regular interval
+                handler.postDelayed(this, 1000);
+            }
+        }
+    };
+
+
+
+    public QuizFragment(int level, int levelTime, long overallTime) {
+        this.level = level;
+        this.levelTime = levelTime;
+    }
+
 
     public QuizFragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -86,10 +126,13 @@ public class QuizFragment extends Fragment {
         timerText = view.findViewById(R.id.timerTimeText);
         tvQuestion = view.findViewById(R.id.tvQuestionNu);
         timer = view.findViewById(R.id.progressBar);
+        tvOverallTime = view.findViewById(R.id.tvOverallTime);
 
-        loadLevel(1);
-        tvLevel.setText("Επίπεδο 1");
+        loadLevel(level);
+        tvLevel.setText("Επίπεδο " + level);
         tvQuestion.setText("Ερώτηση 1");
+
+        handler.post(runnable);
 
 
         BindDictionary<Question> bindDictionary = new BindDictionary<>();
@@ -159,7 +202,7 @@ public class QuizFragment extends Fragment {
         cardStackView.setAdapter(funDapter);
         cardStackView.setBackgroundColor(Color.TRANSPARENT);
         countDownTimer.start();
-        timerText.setText("45");
+        timerText.setText(levelTime+"");
 
 
         cardStackView.setCardEventListener(new CardStackView.CardEventListener() {
@@ -185,7 +228,7 @@ public class QuizFragment extends Fragment {
                         public void run() {
                             swipeRight();
                         }
-                    }, 1000);
+                    }, 2000);
                 }
                 questions.remove(0);
                 funDapter.updateData(questions);
@@ -208,6 +251,12 @@ public class QuizFragment extends Fragment {
             }
         });
 
+    }
+
+    @Override
+    public void onDestroy() {
+
+        super.onDestroy();
     }
 
     private void loadLevel(int level) {
@@ -255,6 +304,8 @@ public class QuizFragment extends Fragment {
             }
         });
     }
+
+
 
     private int numberfyDirection(SwipeDirection direction) {
         if (direction == SwipeDirection.Top) return 0;

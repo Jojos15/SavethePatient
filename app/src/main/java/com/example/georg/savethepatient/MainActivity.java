@@ -13,6 +13,25 @@ public class MainActivity extends AppCompatActivity {
 
     private QuizFragment quizFragment;
     private FragmentManager manager;
+    private long timeInSeconds = 0;
+
+    final Handler handler = new Handler();
+    Runnable runnable = new Runnable() {
+
+        @Override
+        public void run() {
+            try{
+                timeInSeconds++;
+            }
+            catch (Exception e) {
+                // TODO: handle exception
+            }
+            finally{
+                //also call the same runnable to call it at regular interval
+                handler.postDelayed(this, 1000);
+            }
+        }
+    };
 
     ///////////////////////////////////////////////////////////////////////////
     private static final int UI_ANIMATION_DELAY = 300;
@@ -49,9 +68,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        quizFragment = new QuizFragment();
+        quizFragment = new QuizFragment(1, 45, 0);
         manager = getSupportFragmentManager();
     }
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -61,10 +81,13 @@ public class MainActivity extends AppCompatActivity {
         mHideHandler.postDelayed(mHideRunnable, 100);
 
         manager.beginTransaction().replace(R.id.fullscreen_content, quizFragment).commit();
+
+        handler.post(runnable);
     }
 
-
+    public long getTimeInSeconds() {
+        return timeInSeconds;
+    }
 }
 
 //TODO: Calculate implications, make a case for that
-//TODO: Rounded corners for questions

@@ -187,7 +187,7 @@
         </attr>
     </declare-styleable><style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
-    </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.android.support:cardview-v7:28.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.android.support:cardview-v7:28.0.0" from-dependency="true" generated-set="com.android.support:cardview-v7:28.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res"><file path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res\values\values.xml" qualifiers=""><attr format="reference" name="cardViewStyle"/><color name="cardview_dark_background">#FF424242</color><color name="cardview_light_background">#FFFFFFFF</color><color name="cardview_shadow_end_color">#03000000</color><color name="cardview_shadow_start_color">#37000000</color><declare-styleable name="CardView">
+    </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="me.grantland:autofittextview:0.2.1$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="me.grantland:autofittextview:0.2.1" from-dependency="true" generated-set="me.grantland:autofittextview:0.2.1$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\res"><file path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\res\values\values.xml" qualifiers=""><declare-styleable name="AutofitTextView"><attr format="dimension" name="minTextSize"/><attr format="float" name="precision"/><attr format="boolean" name="sizeToFit"/></declare-styleable></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.android.support:cardview-v7:28.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="com.android.support:cardview-v7:28.0.0" from-dependency="true" generated-set="com.android.support:cardview-v7:28.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res"><file path="C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\res\values\values.xml" qualifiers=""><attr format="reference" name="cardViewStyle"/><color name="cardview_dark_background">#FF424242</color><color name="cardview_light_background">#FFFFFFFF</color><color name="cardview_shadow_end_color">#03000000</color><color name="cardview_shadow_start_color">#37000000</color><declare-styleable name="CardView">
         
         <attr format="color" name="cardBackgroundColor"/>
         
@@ -2659,7 +2659,17 @@
         </attr><attr format="reference" name="leftOverlay"/><attr format="reference" name="rightOverlay"/><attr format="reference" name="bottomOverlay"/><attr format="reference" name="topOverlay"/></declare-styleable><string name="app_name">CardStackView</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res"/><source path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\generated\res\rs\debug"/><source path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res"><file name="ic_cake_black_24dp" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable\ic_cake_black_24dp.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable\ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="rounded_corners_background" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable\rounded_corners_background.xml" qualifiers="" type="drawable"/><file name="ic_alpha" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_alpha.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_beta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_beta.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_broken_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_broken_heart.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_delta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_delta.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_gamma" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_gamma.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-hdpi\ic_heart.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_alpha" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_alpha.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_beta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_beta.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_broken_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_broken_heart.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_delta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_delta.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_gamma" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_gamma.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-mdpi\ic_heart.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher_foreground" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-v24\ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ic_alpha" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_alpha.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_beta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_beta.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_broken_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_broken_heart.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_delta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_delta.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_gamma" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_gamma.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xhdpi\ic_heart.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_alpha" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_alpha.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_beta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_beta.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_broken_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_broken_heart.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_delta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_delta.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_gamma" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_gamma.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxhdpi\ic_heart.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_alpha" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_alpha.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_beta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_beta.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_broken_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_broken_heart.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_delta" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_delta.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_gamma" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_gamma.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="ic_heart" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\drawable-xxxhdpi\ic_heart.png" qualifiers="xxxhdpi-v4" type="drawable"/><file name="activity_main" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="card_layout" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\card_layout.xml" qualifiers="" type="layout"/><file name="fragment_quiz" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\fragment_quiz.xml" qualifiers="" type="layout"/><file name="overlay_bottom" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\overlay_bottom.xml" qualifiers="" type="layout"/><file name="overlay_left" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\overlay_left.xml" qualifiers="" type="layout"/><file name="overlay_right" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\overlay_right.xml" qualifiers="" type="layout"/><file name="overlay_top" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\layout\overlay_top.xml" qualifiers="" type="layout"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-hdpi\ic_launcher_round.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-mdpi\ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xhdpi\ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="level1" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\raw\level1.csv" qualifiers="" type="raw"/><file name="level2" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\raw\level2.csv" qualifiers="" type="raw"/><file name="level3" path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\raw\level3.csv" qualifiers="" type="raw"/><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="ButtonBarContainerTheme">
         <attr format="reference" name="metaButtonBarStyle"/>
         <attr format="reference" name="metaButtonBarButtonStyle"/>
-    </declare-styleable></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\colors.xml" qualifiers=""><color name="colorPrimary">#3f51b5</color><color name="colorPrimaryDark">#303F9F</color><color name="colorAccent">#FF4081</color><color name="white">#ffffff</color><color name="holo_purple">#aeea00</color><color name="transparent">#00aeea00</color><color name="black_overlay">#66000000</color><color name="dark_grey">#263238</color></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Save the Patient</string><string name="dummy_button">Dummy Button</string><string name="dummy_content">DUMMY\nCONTENT</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    </declare-styleable></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\colors.xml" qualifiers=""><color name="colorPrimary">#3f51b5</color><color name="colorPrimaryDark">#303F9F</color><color name="colorAccent">#FF4081</color><color name="white">#ffffff</color><color name="holo_purple">#aeea00</color><color name="transparent">#00aeea00</color><color name="black_overlay">#66000000</color><color name="dark_grey">#263238</color><color name="black">#000000</color></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Save the Patient</string><string name="hello_blank_fragment">Hello blank fragment</string><string name="second_life_lost">Κι άλλη λάθος απάντηση?
+        \nΠριν θεωρήσεις οτι όλα χάθηκαν, σκέψου ότι είσαι από τους τυχερούς που έχουν μια ακόμη  ευκαίρια. </string><string name="second_level_intro"> Συγχαρητήρια!
+        \nΔουλεύεις πλέον ως κλινικός φαρμακοποιός, σε μεγάλο νοσοκομείο της χώρας.
+        \nΚαθημερινά, έχεις να διαχειριστείς πολλές διαφορετικές περιπτώσεις κλινικών περιστατικών, καθώς και να επιλέγεις για τους πολυάριθμους ασθενείς, τις σωστές δόσεις και φαρμακευτικές ουσίες.</string><string name="third_level_intro">Συγχαρητήρια!
+        \nΛόγω των εξαιρετικών ικανοτήτων σου ο διευθυντής της κλινικής σε μεταφέρει στη Μονάδα Εντατικής Θεραπείας, όπου ασθενείς με βαριά περιστατικά χρειάζονται και τη δική σου συμβουλή και επέμβαση, προκειμένου να μην επιβαρυνθούν.</string><string name="third_life_lost">Ως φαρμακοποιός είσαι άνθρωπος και τα λάθη ειναι ανθρώπινα.
+        \nΠροσπάθησε την επόμενη φορά να είσαι πιο προσεκτικός!</string><string name="first_life_lost">Τα περιθώρια λάθους στενεύουν!
+        \nΠρόσεχε, γιατί η ζωή του ασθενή βρίσκεται στα χέρια σου! </string><string name="you_won">Συγχαρητήρια!!! Κατάφερες να ξεπεράσεις όλες τις δοκιμασίες.
+        \nΈσωσες τον ασθενή και έγινες ο Φαρμακοποιός της χρονιάς! </string><string name="there_was_an_implication">Η ουσία που χορηγήθηκε στον ασθενή αναίρεσε το προηγούμενο ζήτημά του,
+        \nπαρουσιάστηκε όμως η εξής επιπλοκή:</string><string name="first_level_intro">Είσαι ένας φαρμακοποιός, εργαζόμενος σε συνοικιακό φαρμακείο.
+        \nΚατά τη διάρκεια της ημέρας, δεκάδες άτομα ζητούν τη συμβουλή και τη βοήθειά σου</string><string name="you_lost">Δυστυχώς έχασες αλλά τίποτα δεν τελείωσε.
+        \nΑύριο είναι μια νέα μέρα για να αναδείξεις τις ικανότητές σου και να καταφέρεις να σώσεις τον ασθενή.</string></file><file path="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -2814,98 +2824,16 @@
 
         
         <attr name="android:tileMode"/>
-    </declare-styleable><declare-styleable name="ColorStateListItem">
-        
-        <attr name="android:color"/>
-        
-        <attr format="float" name="alpha"/>
-        <attr name="android:alpha"/>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="Spinner">
-        
-        <attr name="android:prompt"/>
-        
-        <attr name="popupTheme"/>
-        
-        <attr name="android:popupBackground"/>
-        
-        <attr name="android:dropDownWidth"/>
-        
-        <attr name="android:entries"/>
-    </declare-styleable><declare-styleable name="CircularProgressBar"><attr format="integer" name="cpb_progress"/><attr format="integer" name="cpb_progress_max"/><attr format="boolean" name="cpb_indeterminate_mode"/><attr format="color" name="cpb_progressbar_color"/><attr format="color" name="cpb_background_progressbar_color"/><attr format="dimension" name="cpb_progressbar_width"/><attr format="dimension" name="cpb_background_progressbar_width"/></declare-styleable><declare-styleable name="PopupWindow">
-        
-        <attr format="boolean" name="overlapAnchor"/>
-        <attr name="android:popupBackground"/>
-        <attr name="android:popupAnimationStyle"/>
-    </declare-styleable><declare-styleable name="AnimatedStateListDrawableItem">
+    </declare-styleable><declare-styleable name="CircularProgressBar"><attr format="integer" name="cpb_progress"/><attr format="integer" name="cpb_progress_max"/><attr format="boolean" name="cpb_indeterminate_mode"/><attr format="color" name="cpb_progressbar_color"/><attr format="color" name="cpb_background_progressbar_color"/><attr format="dimension" name="cpb_progressbar_width"/><attr format="dimension" name="cpb_background_progressbar_width"/></declare-styleable><declare-styleable name="AnimatedStateListDrawableItem">
         
         <attr name="android:drawable"/>
         
         <attr name="android:id"/>
-    </declare-styleable><declare-styleable name="DrawerArrowToggle">
-        
-        <attr format="color" name="color"/>
-        
-        <attr format="boolean" name="spinBars"/>
-        
-        <attr format="dimension" name="drawableSize"/>
-        
-        <attr format="dimension" name="gapBetweenBars"/>
-        
-        <attr format="dimension" name="arrowHeadLength"/>
-        
-        <attr format="dimension" name="arrowShaftLength"/>
-        
-        <attr format="dimension" name="barLength"/>
-        
-        <attr format="dimension" name="thickness"/>
-    </declare-styleable><declare-styleable name="StateListDrawable">
-        
-        <attr name="android:visible"/>
-        
-        <attr name="android:variablePadding"/>
-        
-        <attr name="android:constantSize"/>
-        
-        <attr name="android:dither"/>
-        
-        <attr name="android:enterFadeDuration"/>
-        
-        <attr name="android:exitFadeDuration"/>
-        
-        
-    </declare-styleable><declare-styleable name="ActionBarLayout">
-        <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="ActivityChooserView">
-        
-        <attr format="string" name="initialActivityCount"/>
-        
-        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
     </declare-styleable><declare-styleable name="GradientColorItem">
         
         <attr name="android:offset"/>
         
         <attr name="android:color"/>
-    </declare-styleable><declare-styleable name="ViewStubCompat">
-        
-        <attr name="android:layout"/>
-        
-        <attr name="android:inflatedId"/>
-        <attr name="android:id"/>
     </declare-styleable><declare-styleable name="AppCompatTheme">
 
         
@@ -3248,25 +3176,6 @@
         <attr format="reference|color" name="colorError"/>
 
         <attr format="string" name="viewInflaterClass"/>
-    </declare-styleable><declare-styleable name="ListPopupWindow">
-        
-        <attr name="android:dropDownVerticalOffset"/>
-        
-        <attr name="android:dropDownHorizontalOffset"/>
-    </declare-styleable><declare-styleable name="TextAppearance">
-        <attr name="android:textSize"/>
-        <attr name="android:textColor"/>
-        <attr name="android:textColorHint"/>
-        <attr name="android:textColorLink"/>
-        <attr name="android:textStyle"/>
-        <attr name="android:typeface"/>
-        <attr name="android:fontFamily"/>
-        <attr name="fontFamily"/>
-        <attr name="textAllCaps"/>
-        <attr name="android:shadowColor"/>
-        <attr name="android:shadowDy"/>
-        <attr name="android:shadowDx"/>
-        <attr name="android:shadowRadius"/>
     </declare-styleable><declare-styleable name="MenuView">
         
         <attr name="android:itemTextAppearance"/>
@@ -3367,26 +3276,6 @@
         <attr format="dimension" name="paddingBottomNoButtons"/>
         
         <attr format="dimension" name="paddingTopNoTitle"/>
-    </declare-styleable><declare-styleable name="MenuGroup">
-
-        
-        <attr name="android:id"/>
-
-        
-        <attr name="android:menuCategory"/>
-
-        
-        <attr name="android:orderInCategory"/>
-
-        
-        <attr name="android:checkableBehavior"/>
-
-        
-        <attr name="android:visible"/>
-
-        
-        <attr name="android:enabled"/>
-
     </declare-styleable><declare-styleable name="Toolbar">
         <attr format="reference" name="titleTextAppearance"/>
         <attr format="reference" name="subtitleTextAppearance"/>
@@ -3442,27 +3331,6 @@
         <attr name="android:layout_height"/>
         <attr name="android:layout_weight"/>
         <attr name="android:layout_gravity"/>
-    </declare-styleable><declare-styleable name="FontFamily">
-        
-        <attr format="string" name="fontProviderAuthority"/>
-        
-        <attr format="string" name="fontProviderPackage"/>
-        
-        <attr format="string" name="fontProviderQuery"/>
-        
-        <attr format="reference" name="fontProviderCerts"/>
-        
-        <attr name="fontProviderFetchStrategy">
-            
-            <enum name="blocking" value="0"/>
-            
-            <enum name="async" value="1"/>
-        </attr>
-        
-        <attr format="integer" name="fontProviderFetchTimeout">
-            
-            <enum name="forever" value="-1"/>
-        </attr>
     </declare-styleable><declare-styleable name="StateListDrawableItem">
         
         <attr name="android:drawable"/>
@@ -3520,6 +3388,265 @@
         <attr name="android:minWidth"/>
         
         <attr name="android:minHeight"/>
+    </declare-styleable><declare-styleable name="ButtonBarLayout">
+        
+        <attr format="boolean" name="allowStacking"/>
+    </declare-styleable><declare-styleable name="ViewBackgroundHelper">
+        <attr name="android:background"/>
+        
+        <attr format="color" name="backgroundTint"/>
+
+        
+        <attr name="backgroundTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="AppCompatImageView">
+        <attr name="android:src"/>
+        
+        <attr format="reference" name="srcCompat"/>
+
+        
+        <attr format="color" name="tint"/>
+
+        
+        <attr name="tintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+    </declare-styleable><declare-styleable name="PopupWindowBackgroundState">
+        
+        <attr format="boolean" name="state_above_anchor"/>
+    </declare-styleable><declare-styleable name="ActionMode">
+        
+        <attr name="titleTextStyle"/>
+        
+        <attr name="subtitleTextStyle"/>
+        
+        <attr name="background"/>
+        
+        <attr name="backgroundSplit"/>
+        
+        <attr name="height"/>
+        
+        <attr format="reference" name="closeItemLayout"/>
+    </declare-styleable><declare-styleable name="AutofitTextView"><attr format="dimension" name="minTextSize"/><attr format="float" name="precision"/><attr format="boolean" name="sizeToFit"/></declare-styleable><declare-styleable name="SwitchCompat">
+        
+        <attr name="android:thumb"/>
+        
+        <attr format="color" name="thumbTint"/>
+        
+        <attr name="thumbTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr format="reference" name="track"/>
+        
+        <attr format="color" name="trackTint"/>
+        
+        <attr name="trackTintMode">
+            
+            <enum name="src_over" value="3"/>
+            
+            <enum name="src_in" value="5"/>
+            
+            <enum name="src_atop" value="9"/>
+            
+            <enum name="multiply" value="14"/>
+            
+            <enum name="screen" value="15"/>
+            
+            <enum name="add" value="16"/>
+        </attr>
+        
+        <attr name="android:textOn"/>
+        
+        <attr name="android:textOff"/>
+        
+        <attr format="dimension" name="thumbTextPadding"/>
+        
+        <attr format="reference" name="switchTextAppearance"/>
+        
+        <attr format="dimension" name="switchMinWidth"/>
+        
+        <attr format="dimension" name="switchPadding"/>
+        
+        <attr format="boolean" name="splitTrack"/>
+        
+        <attr format="boolean" name="showText"/>
+    </declare-styleable><declare-styleable name="ColorStateListItem">
+        
+        <attr name="android:color"/>
+        
+        <attr format="float" name="alpha"/>
+        <attr name="android:alpha"/>
+    </declare-styleable><declare-styleable name="AnimatedStateListDrawableCompat">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="Spinner">
+        
+        <attr name="android:prompt"/>
+        
+        <attr name="popupTheme"/>
+        
+        <attr name="android:popupBackground"/>
+        
+        <attr name="android:dropDownWidth"/>
+        
+        <attr name="android:entries"/>
+    </declare-styleable><declare-styleable name="PopupWindow">
+        
+        <attr format="boolean" name="overlapAnchor"/>
+        <attr name="android:popupBackground"/>
+        <attr name="android:popupAnimationStyle"/>
+    </declare-styleable><declare-styleable name="DrawerArrowToggle">
+        
+        <attr format="color" name="color"/>
+        
+        <attr format="boolean" name="spinBars"/>
+        
+        <attr format="dimension" name="drawableSize"/>
+        
+        <attr format="dimension" name="gapBetweenBars"/>
+        
+        <attr format="dimension" name="arrowHeadLength"/>
+        
+        <attr format="dimension" name="arrowShaftLength"/>
+        
+        <attr format="dimension" name="barLength"/>
+        
+        <attr format="dimension" name="thickness"/>
+    </declare-styleable><declare-styleable name="StateListDrawable">
+        
+        <attr name="android:visible"/>
+        
+        <attr name="android:variablePadding"/>
+        
+        <attr name="android:constantSize"/>
+        
+        <attr name="android:dither"/>
+        
+        <attr name="android:enterFadeDuration"/>
+        
+        <attr name="android:exitFadeDuration"/>
+        
+        
+    </declare-styleable><declare-styleable name="ActionBarLayout">
+        <attr name="android:layout_gravity"/>
+    </declare-styleable><declare-styleable name="ActivityChooserView">
+        
+        <attr format="string" name="initialActivityCount"/>
+        
+        <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
+    </declare-styleable><declare-styleable name="ViewStubCompat">
+        
+        <attr name="android:layout"/>
+        
+        <attr name="android:inflatedId"/>
+        <attr name="android:id"/>
+    </declare-styleable><declare-styleable name="ListPopupWindow">
+        
+        <attr name="android:dropDownVerticalOffset"/>
+        
+        <attr name="android:dropDownHorizontalOffset"/>
+    </declare-styleable><declare-styleable name="TextAppearance">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:textColorLink"/>
+        <attr name="android:textStyle"/>
+        <attr name="android:typeface"/>
+        <attr name="android:fontFamily"/>
+        <attr name="fontFamily"/>
+        <attr name="textAllCaps"/>
+        <attr name="android:shadowColor"/>
+        <attr name="android:shadowDy"/>
+        <attr name="android:shadowDx"/>
+        <attr name="android:shadowRadius"/>
+    </declare-styleable><declare-styleable name="MenuGroup">
+
+        
+        <attr name="android:id"/>
+
+        
+        <attr name="android:menuCategory"/>
+
+        
+        <attr name="android:orderInCategory"/>
+
+        
+        <attr name="android:checkableBehavior"/>
+
+        
+        <attr name="android:visible"/>
+
+        
+        <attr name="android:enabled"/>
+
+    </declare-styleable><declare-styleable name="FontFamily">
+        
+        <attr format="string" name="fontProviderAuthority"/>
+        
+        <attr format="string" name="fontProviderPackage"/>
+        
+        <attr format="string" name="fontProviderQuery"/>
+        
+        <attr format="reference" name="fontProviderCerts"/>
+        
+        <attr name="fontProviderFetchStrategy">
+            
+            <enum name="blocking" value="0"/>
+            
+            <enum name="async" value="1"/>
+        </attr>
+        
+        <attr format="integer" name="fontProviderFetchTimeout">
+            
+            <enum name="forever" value="-1"/>
+        </attr>
     </declare-styleable><declare-styleable name="MenuItem">
 
         
@@ -3629,29 +3756,6 @@
             <enum name="add" value="16"/>
         </attr>
 
-    </declare-styleable><declare-styleable name="ButtonBarLayout">
-        
-        <attr format="boolean" name="allowStacking"/>
-    </declare-styleable><declare-styleable name="ViewBackgroundHelper">
-        <attr name="android:background"/>
-        
-        <attr format="color" name="backgroundTint"/>
-
-        
-        <attr name="backgroundTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
     </declare-styleable><declare-styleable name="AnimatedStateListDrawableTransition">
         
         <attr name="android:fromId"/>
@@ -3672,29 +3776,6 @@
         <attr format="reference" name="theme"/>
         
         <attr name="android:theme"/>
-    </declare-styleable><declare-styleable name="AppCompatImageView">
-        <attr name="android:src"/>
-        
-        <attr format="reference" name="srcCompat"/>
-
-        
-        <attr format="color" name="tint"/>
-
-        
-        <attr name="tintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
     </declare-styleable><declare-styleable name="CardStackView"><attr format="integer" name="visibleCount"/><attr format="float" name="swipeThreshold"/><attr format="float" name="translationDiff"/><attr format="float" name="scaleDiff"/><attr format="enum" name="stackFrom">
             <enum name="bottom" value="0"/>
             <enum name="top" value="1"/>
@@ -3703,10 +3784,7 @@
             <enum name="freedom_no_bottom" value="1"/>
             <enum name="horizontal" value="2"/>
             <enum name="vertical" value="3"/>
-        </attr><attr format="reference" name="leftOverlay"/><attr format="reference" name="rightOverlay"/><attr format="reference" name="bottomOverlay"/><attr format="reference" name="topOverlay"/></declare-styleable><declare-styleable name="PopupWindowBackgroundState">
-        
-        <attr format="boolean" name="state_above_anchor"/>
-    </declare-styleable><declare-styleable name="FontFamilyFont">
+        </attr><attr format="reference" name="leftOverlay"/><attr format="reference" name="rightOverlay"/><attr format="reference" name="bottomOverlay"/><attr format="reference" name="topOverlay"/></declare-styleable><declare-styleable name="FontFamilyFont">
         
         <attr name="fontStyle">
             <enum name="normal" value="0"/>
@@ -3788,19 +3866,6 @@
         
         <attr format="reference" name="submitBackground"/>
         <attr name="android:focusable"/>
-    </declare-styleable><declare-styleable name="ActionMode">
-        
-        <attr name="titleTextStyle"/>
-        
-        <attr name="subtitleTextStyle"/>
-        
-        <attr name="background"/>
-        
-        <attr name="backgroundSplit"/>
-        
-        <attr name="height"/>
-        
-        <attr format="reference" name="closeItemLayout"/>
     </declare-styleable><declare-styleable name="ActionMenuView">
         
     </declare-styleable><declare-styleable name="CompoundButton">
@@ -3831,59 +3896,4 @@
         <attr name="android:drawableStart"/>
         <attr name="android:drawableEnd"/>
         <attr name="android:textAppearance"/>
-    </declare-styleable><declare-styleable name="SwitchCompat">
-        
-        <attr name="android:thumb"/>
-        
-        <attr format="color" name="thumbTint"/>
-        
-        <attr name="thumbTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr format="reference" name="track"/>
-        
-        <attr format="color" name="trackTint"/>
-        
-        <attr name="trackTintMode">
-            
-            <enum name="src_over" value="3"/>
-            
-            <enum name="src_in" value="5"/>
-            
-            <enum name="src_atop" value="9"/>
-            
-            <enum name="multiply" value="14"/>
-            
-            <enum name="screen" value="15"/>
-            
-            <enum name="add" value="16"/>
-        </attr>
-        
-        <attr name="android:textOn"/>
-        
-        <attr name="android:textOff"/>
-        
-        <attr format="dimension" name="thumbTextPadding"/>
-        
-        <attr format="reference" name="switchTextAppearance"/>
-        
-        <attr format="dimension" name="switchMinWidth"/>
-        
-        <attr format="dimension" name="switchPadding"/>
-        
-        <attr format="boolean" name="splitTrack"/>
-        
-        <attr format="boolean" name="showText"/>
     </declare-styleable></configuration></mergedItems></merger>

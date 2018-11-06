@@ -15,15 +15,15 @@ public final class R {
         public static final int bottomOverlay = 0x7f020038;
         public static final int elevationEnabled = 0x7f020085;
         public static final int leftOverlay = 0x7f0200ab;
-        public static final int rightOverlay = 0x7f0200d7;
-        public static final int scaleDiff = 0x7f0200d8;
-        public static final int stackFrom = 0x7f0200e9;
-        public static final int swipeDirection = 0x7f0200f3;
-        public static final int swipeEnabled = 0x7f0200f4;
-        public static final int swipeThreshold = 0x7f0200f5;
-        public static final int topOverlay = 0x7f02011e;
-        public static final int translationDiff = 0x7f020122;
-        public static final int visibleCount = 0x7f020125;
+        public static final int rightOverlay = 0x7f0200d9;
+        public static final int scaleDiff = 0x7f0200da;
+        public static final int stackFrom = 0x7f0200ec;
+        public static final int swipeDirection = 0x7f0200f6;
+        public static final int swipeEnabled = 0x7f0200f7;
+        public static final int swipeThreshold = 0x7f0200f8;
+        public static final int topOverlay = 0x7f020121;
+        public static final int translationDiff = 0x7f020125;
+        public static final int visibleCount = 0x7f020128;
     }
     public static final class id {
         private id() {}
@@ -35,7 +35,7 @@ public final class R {
         public static final int freedom_no_bottom = 0x7f07003f;
         public static final int horizontal = 0x7f070044;
         public static final int top = 0x7f070098;
-        public static final int vertical = 0x7f0700a4;
+        public static final int vertical = 0x7f0700a5;
     }
     public static final class layout {
         private layout() {}
@@ -51,7 +51,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] CardStackView = { 0x7f020038, 0x7f020085, 0x7f0200ab, 0x7f0200d7, 0x7f0200d8, 0x7f0200e9, 0x7f0200f3, 0x7f0200f4, 0x7f0200f5, 0x7f02011e, 0x7f020122, 0x7f020125 };
+        public static final int[] CardStackView = { 0x7f020038, 0x7f020085, 0x7f0200ab, 0x7f0200d9, 0x7f0200da, 0x7f0200ec, 0x7f0200f6, 0x7f0200f7, 0x7f0200f8, 0x7f020121, 0x7f020125, 0x7f020128 };
         public static final int CardStackView_bottomOverlay = 0;
         public static final int CardStackView_elevationEnabled = 1;
         public static final int CardStackView_leftOverlay = 2;

@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/rounded_corners_background"
+    android:orientation="vertical"
     android:weightSum="100">
 
     <TableRow
-        android:layout_height="652dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
         android:layout_weight="40">
 
-        <TextView
+        <me.grantland.widget.AutofitTextView
             android:id="@+id/tvQuestion"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:textSize="40sp"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            app:minTextSize="12sp"
             android:text="" />
 
     </TableRow>
 
     <TableRow
-        android:layout_weight="15">
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
 
         <TextView
             android:id="@+id/textViewStableA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
             android:gravity="center"
             android:text="" />
 
@@ -35,18 +47,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="100"
+            android:textColor="@color/black_overlay"
             android:gravity="center"
             android:text="" />
     </TableRow>
 
     <TableRow
-        android:layout_weight="15">
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
 
         <TextView
             android:id="@+id/textViewStableB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
             android:gravity="center"
             android:text="" />
 
@@ -55,18 +72,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="100"
+            android:textColor="@color/black_overlay"
             android:gravity="center"
             android:text="" />
     </TableRow>
 
     <TableRow
-        android:layout_weight="15">
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
 
         <TextView
             android:id="@+id/textViewStableC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
             android:gravity="center"
             android:text="" />
 
@@ -75,19 +97,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="100"
+            android:textColor="@color/black_overlay"
             android:gravity="center"
             android:text="" />
     </TableRow>
 
     <TableRow
-        android:layout_weight="15">
+        android:layout_weight="15"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
 
         <TextView
             android:id="@+id/textViewStableD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:gravity="center"
+            android:layout_marginStart="8dp"
             android:text="" />
 
         <TextView
@@ -95,7 +122,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="100"
+            android:textColor="@color/black_overlay"
             android:gravity="center"
             android:text="" />
     </TableRow>
-</TableLayout>
+</LinearLayout>

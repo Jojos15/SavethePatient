@@ -9,6 +9,7 @@ MERGED from [com.android.support:support-v4:28.0.0] C:\Users\georg\.gradle\cache
 MERGED from [com.mikhaellopez:circularprogressbar:2.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\circularprogressbar-2.0.0.aar\01b282d24f6fe7698ce48638beed5fa7\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\ac675ccad597526a6560492b63294d37\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\AndroidManifest.xml:17:1-22:12
+MERGED from [me.grantland:autofittextview:0.2.1] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f966ff7b592a662a1f2b76c1a1968117\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\0d5823e318e41062eaadf95bb506efd1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\21636bf318aa3763994f1abf7e0a13b2\AndroidManifest.xml:17:1-22:12
@@ -108,6 +109,8 @@ MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\georg\.gradle\cac
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\ac675ccad597526a6560492b63294d37\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\13e13b8c72b5a4810e6ed360a11c81a0\AndroidManifest.xml:20:5-44
+MERGED from [me.grantland:autofittextview:0.2.1] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\AndroidManifest.xml:7:5-9:41
+MERGED from [me.grantland:autofittextview:0.2.1] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\autofittextview-0.2.1.aar\149ca710b1d671f21a18c0c1ead27dc0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f966ff7b592a662a1f2b76c1a1968117\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f966ff7b592a662a1f2b76c1a1968117\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\georg\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\0d5823e318e41062eaadf95bb506efd1\AndroidManifest.xml:20:5-44
