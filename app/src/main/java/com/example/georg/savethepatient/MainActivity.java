@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private QuizFragment quizFragment;
     private FragmentManager manager;
     private long timeInSeconds = 0;
+    private boolean[] lives = {true, true, true, true, true, true};
+    private long levelTime = 0;
 
     final Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -68,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        quizFragment = new QuizFragment(1, 45, 0);
+        levelTime = 46;
+        quizFragment = new QuizFragment(1, 46, 0);
         manager = getSupportFragmentManager();
     }
 
@@ -87,6 +90,18 @@ public class MainActivity extends AppCompatActivity {
 
     public long getTimeInSeconds() {
         return timeInSeconds;
+    }
+
+    public boolean getLives(int pos) {
+        return lives[pos];
+    }
+
+    public void setLives(boolean lives, int pos) {
+        this.lives[pos] = lives;
+    }
+
+    public long getLevelTime(){
+        return levelTime;
     }
 }
 

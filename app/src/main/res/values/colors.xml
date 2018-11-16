@@ -9,4 +9,5 @@
     <color name="black_overlay">#66000000</color>
     <color name="black">#000000</color>
     <color name="dark_grey">#263238</color>
+    <color name="heart_red">#c62828</color>
 </resources>

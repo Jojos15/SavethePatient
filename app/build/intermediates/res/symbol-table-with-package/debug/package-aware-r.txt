@@ -378,6 +378,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color heart_red
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color holo_purple
@@ -629,11 +630,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable ic_alpha
 drawable ic_beta
-drawable ic_broken_heart
 drawable ic_cake_black_24dp
 drawable ic_delta
 drawable ic_gamma
 drawable ic_heart
+drawable ic_heart_grey
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -809,6 +810,7 @@ id tvAnswerA
 id tvAnswerB
 id tvAnswerC
 id tvAnswerD
+id tvIfWrong
 id tvLevel
 id tvOverallTime
 id tvQuestion

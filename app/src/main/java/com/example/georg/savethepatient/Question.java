@@ -6,6 +6,7 @@ public class Question {
     private String[] answers;
     private int[] type;
     private boolean hasAnswers = true;
+    private String textToDisplay = null;
 
     public Question(String quest, String[] answers, int[] type){
         this.quest = quest;
@@ -13,7 +14,7 @@ public class Question {
         this.type = type;
     }
 
-    public Question(String quest){
+    public Question(String quest, String textToDisplay){
         this.hasAnswers = false;
     }
 
@@ -50,5 +51,13 @@ public class Question {
 
     public void setQuest(String quest) {
         this.quest = quest;
+    }
+
+    public String getTextToDisplay() {
+        return textToDisplay;
+    }
+
+    public void setTextToDisplay(String textToDisplay) {
+        this.textToDisplay = textToDisplay;
     }
 }

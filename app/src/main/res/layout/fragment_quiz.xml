@@ -38,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="15"
+                android:weightSum="3"
                 android:elevation="8dp">
 
                 <LinearLayout
@@ -69,18 +70,19 @@
                         android:textAlignment="center"
                         android:textColor="@color/white" />
                 </LinearLayout>
+
                 <RelativeLayout
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1">
 
                     <com.mikhaellopez.circularprogressbar.CircularProgressBar
                         android:id="@+id/progressBar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
                         android:layout_marginEnd="11dp"
                         android:foregroundGravity="center"
-                        android:layout_centerInParent="true"
                         android:progress="0"
                         app:cpb_background_progressbar_color="#FFCDD2"
                         app:cpb_background_progressbar_width="0dp"
@@ -92,34 +94,42 @@
                         android:id="@+id/timerTimeText"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:foregroundGravity="center"
                         android:gravity="center"
                         android:textColor="@color/white" />
                 </RelativeLayout>
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:paddingEnd="4dp"
                     android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_cake_black_24dp" />
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_heart" />
 
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_cake_black_24dp" />
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_heart" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_gravity="center"
                         android:layout_weight="1"
-                        android:src="@drawable/ic_cake_black_24dp" />
+                        android:elevation="8dp"
+                        android:src="@drawable/ic_heart" />
                 </TableRow>
 
 

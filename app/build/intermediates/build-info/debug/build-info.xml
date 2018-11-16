@@ -5,67 +5,68 @@
     build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="FIELD_ADDED"
     plugin-version="3.2.0"
-    timestamp="1541519404545"
+    timestamp="1542391706964"
     token="-8303865461933647911"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="765" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="200" />
     <task
         name="verifier"
-        duration="0" />
+        duration="99" />
 
     <artifact
-        location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1541519168799"
+        timestamp="1542389989974"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
@@ -73,10 +74,20 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1541519404545"
+        ir-eligibility="PARENT_CLASS_CHANGED"
+        timestamp="1542390802214"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1542391706964"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\georg\AndroidStudioProjects\SavethePatient\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
     </build>
 

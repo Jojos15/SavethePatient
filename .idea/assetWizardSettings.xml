@@ -34,9 +34,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\georg\Desktop\broken_heart.png" />
-                                      <entry key="outputName" value="ic_broken_heart" />
-                                      <entry key="theme" value="HOLO_DARK" />
+                                      <entry key="imageAsset" value="C:\Users\georg\Desktop\SaveTP\heart.png" />
+                                      <entry key="outputName" value="ic_heart_grey" />
+                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="themeColor" value="5d5d5d" />
                                     </map>
                                   </option>
                                 </PersistentState>
