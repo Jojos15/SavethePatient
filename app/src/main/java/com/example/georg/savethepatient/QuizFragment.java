@@ -61,12 +61,13 @@ public class QuizFragment extends Fragment {
         public void onTick(long millisUntilFinished) {
             progressI++;
             timerText.setText((int)ceil(millisUntilFinished/1000) +"");
-            timer.setProgress((int) 100 - (progressI * 100 / (46*1000+1 / 1000)));
+            timer.setProgress(100 - (progressI * 100 / 46));
         }
 
         @Override
         public void onFinish() {
             //Do what you want
+            progressI++;
             timer.setProgress(0);
             timerText.setText("0");
             timeFinished = true;

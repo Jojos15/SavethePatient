@@ -105,4 +105,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-//TODO: Calculate implications, make a case for that
+//TODO: Calculate implications, make a case for that   LOADING
+//TODO: Make case for questions with asterisk LOADING
+//TODO: Make menu ADDFEATURE
