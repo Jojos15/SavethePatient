@@ -11,9 +11,9 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
 
-    private QuizFragment quizFragment;
     private FragmentManager manager;
     private long timeInSeconds = 0;
+    private MenuFragment menuFragment;
     private boolean[] lives = {true, true, true, true, true, true};
     private long levelTime = 0;
 
@@ -70,9 +70,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mContentView = findViewById(R.id.fullscreen_content);
 
-        levelTime = 46;
-        quizFragment = new QuizFragment(1, 46, 0);
+        menuFragment = new MenuFragment();
         manager = getSupportFragmentManager();
+
+        manager.beginTransaction().replace(R.id.fullscreen_content, menuFragment).commit();
     }
 
 
@@ -83,9 +84,6 @@ public class MainActivity extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, 100);
 
-        manager.beginTransaction().replace(R.id.fullscreen_content, quizFragment).commit();
-
-        handler.post(runnable);
     }
 
     public long getTimeInSeconds() {
@@ -103,8 +101,35 @@ public class MainActivity extends AppCompatActivity {
     public long getLevelTime(){
         return levelTime;
     }
+
+    public void switchLevel(long timePassed, int level){
+        if(timeInSeconds == 0){
+            handler.post(runnable);
+        }
+        else timeInSeconds = timePassed;
+        int levelTime;
+        if(level == 1) {
+         levelTime = 45;
+        }
+        else if(level==2){
+            levelTime = 30;
+        }
+        else levelTime = 30;
+        QuizFragment quizFragment = new QuizFragment(level, levelTime, timePassed);
+        manager.beginTransaction().setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left).replace(R.id.fullscreen_content, quizFragment).commit();
+
+
+    }
+
+    public void switchLevel(long timePassed, String text){
+        AnnouncementFragment announcementFragment = new AnnouncementFragment(text, timePassed);
+        manager.beginTransaction().setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left).replace(R.id.fullscreen_content, announcementFragment).commit();
+
+
+    }
 }
 
 //TODO: Calculate implications, make a case for that   LOADING
 //TODO: Make case for questions with asterisk LOADING
 //TODO: Make menu ADDFEATURE
+//TODO: Add icons in Announcemnt fragment ADDBEAUTIFULLISM

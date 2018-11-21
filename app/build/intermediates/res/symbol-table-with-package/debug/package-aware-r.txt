@@ -11,6 +11,10 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim enter_from_left
+anim enter_from_right
+anim exit_to_left
+anim exit_to_right
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -686,6 +690,10 @@ id async
 id beginning
 id blocking
 id bottom
+id btAbout
+id btManual
+id btOK
+id btStartGame
 id buttonPanel
 id cancel_action
 id card_frame_content_container
@@ -730,6 +738,7 @@ id imageView2
 id imageView3
 id info
 id italic
+id ivLogoStartScreen
 id left
 id line1
 id line3
@@ -806,6 +815,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tvAnnouncment
 id tvAnswerA
 id tvAnswerB
 id tvAnswerC
@@ -858,6 +868,8 @@ layout activity_main
 layout card_container
 layout card_frame
 layout card_layout
+layout fragment_announcement
+layout fragment_menu
 layout fragment_quiz
 layout notification_action
 layout notification_action_tombstone

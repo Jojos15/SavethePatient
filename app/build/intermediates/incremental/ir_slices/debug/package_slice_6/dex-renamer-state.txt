@@ -1,4 +1,4 @@
-#Tue Nov 06 17:59:50 EET 2018
+#Wed Nov 21 16:39:55 EET 2018
 base.0=C\:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
 path.0=classes.dex
 renamed.0=classes.dex

@@ -29,13 +29,13 @@ public final class R {
         private id() {}
 
         public static final int bottom = 0x7f070021;
-        public static final int card_frame_content_container = 0x7f070024;
-        public static final int card_frame_overlay_container = 0x7f070025;
-        public static final int freedom = 0x7f07003e;
-        public static final int freedom_no_bottom = 0x7f07003f;
-        public static final int horizontal = 0x7f070044;
-        public static final int top = 0x7f070098;
-        public static final int vertical = 0x7f0700a6;
+        public static final int card_frame_content_container = 0x7f070028;
+        public static final int card_frame_overlay_container = 0x7f070029;
+        public static final int freedom = 0x7f070042;
+        public static final int freedom_no_bottom = 0x7f070043;
+        public static final int horizontal = 0x7f070048;
+        public static final int top = 0x7f07009d;
+        public static final int vertical = 0x7f0700ac;
     }
     public static final class layout {
         private layout() {}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MenuFragment">
+
+    <ImageView
+        android:id="@+id/ivLogoStartScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"/>
+
+    <Button
+        android:id="@+id/btStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:text="Εκκίνηση Παιχνιδιού"
+        android:layout_weight="20"/>
+
+    <Button
+        android:id="@+id/btManual"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:text="Οδηγίες"
+        android:layout_weight="15"/>
+
+    <Button
+        android:id="@+id/btAbout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:text="Σχετικά με την Εφαρμογή"
+        android:layout_weight="15"/>
+</LinearLayout>
