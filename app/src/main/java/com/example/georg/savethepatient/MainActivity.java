@@ -133,3 +133,4 @@ public class MainActivity extends AppCompatActivity {
 //TODO: Make case for questions with asterisk LOADING
 //TODO: Make menu ADDFEATURE
 //TODO: Add icons in Announcemnt fragment ADDBEAUTIFULLISM
+//TODO: Update Fundapter only on results MUST

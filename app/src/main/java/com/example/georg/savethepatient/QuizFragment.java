@@ -141,6 +141,14 @@ public class QuizFragment extends Fragment {
         heart2 = view.findViewById(R.id.imageView2);
         heart3 = view.findViewById(R.id.imageView3);
 
+        if(level == 2){
+            heart1.setVisibility(View.GONE);
+        }
+        else if(level == 3){
+            heart1.setVisibility(View.GONE);
+            heart2.setVisibility(View.GONE);
+        }
+
         loadLevel(level);
         tvLevel.setText("Επίπεδο " + level);
         tvQuestion.setText("Ερώτηση 1");
@@ -235,33 +243,45 @@ public class QuizFragment extends Fragment {
 
             @Override
             public void onCardSwiped(final SwipeDirection direction) {
-                if (cardCount % 2 == 0) {
-                    cardStackView.setEnabled(false);
-                    countDownTimer.cancel();
-                    Timer swipeCard = new Timer();
-                    if(timeFinished){
-                        questions.get(1).setQuest("Τέλος Χρόνου");
-                        questions.get(1).setTextToDisplay(onWrongAnswer());
-                        timeFinished = false;
-                    }
-                    else if (questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.RIGHT) {
-                        questions.get(1).setQuest("Σωστό");
-                    } else {
-                        questions.get(1).setQuest("Λάθος");
-                        questions.get(1).setTextToDisplay(onWrongAnswer());
-                    }
-                    swipeCard.schedule(new TimerTask() {
-                        @Override
-                        public void run() {
-                            swipeRight();
+                if(questions.size()!=1) {
+                    if (cardCount % 2 == 0) {
+                        cardStackView.setEnabled(false);
+                        countDownTimer.cancel();
+                        Timer swipeCard = new Timer();
+                        if (timeFinished) {
+                            questions.get(1).setQuest("Τέλος Χρόνου");
+                            questions.get(1).setTextToDisplay(onWrongAnswer());
+                            timeFinished = false;
+                        } else if (questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.RIGHT) {
+                            questions.get(1).setQuest("Σωστό");
+                        } else {
+                            questions.get(1).setQuest("Λάθος");
+                            questions.get(1).setTextToDisplay(onWrongAnswer());
                         }
-                    }, 3000);
+                        swipeCard.schedule(new TimerTask() {
+                            @Override
+                            public void run() {
+                                swipeRight();
+                            }
+                        }, 3000);
 
+                    }
+                    questions.remove(0);
+                    funDapter.updateData(questions);
+                    Log.d("fundapter", "Updated");
+                    cardCount++;
                 }
-                questions.remove(0);
-                funDapter.updateData(questions);
-                Log.d("fundapter", "Updated");
-                cardCount++;
+                else{
+                    if(level==1) {
+                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.second_level_intro));
+                    }
+                    else if(level==2){
+                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.third_level_intro));
+                    }
+                    else if(level == 3){
+                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.you_won));
+                    }
+                }
             }
 
             @Override
