@@ -132,20 +132,14 @@ public class QuestionLoader {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] questions = line.split(cvsSplitBy);
-                /*if (questions[0].indexOf('*') == 0) {
-                    int a1 = WRONG, a2 = WRONG, a3 = WRONG, a4 = WRONG;
+                if (questions[0].indexOf('*') == 0) {
+                    int a1 = WRONG, a2 = IMPLICATION, a3 = WRONG, a4 = WRONG;
 
                     if (questions[1].indexOf('!') == 0){
                         a1 = RIGHT;
                         StringBuilder st = new StringBuilder(questions[1]);
                         st.deleteCharAt(0);
                         questions[1] = st.toString();
-                    }
-                    else if (questions[2].indexOf('!') == 0){
-                        a2 = RIGHT;
-                        StringBuilder st = new StringBuilder(questions[2]);
-                        st.deleteCharAt(0);
-                        questions[2] = st.toString();
                     }
                     else if (questions[3].indexOf('!') == 0){
                         a3 = RIGHT;
@@ -162,12 +156,10 @@ public class QuestionLoader {
 
                     int[] temp = new int[]{a1, a2, a3, a4};
 
-                    level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
+                    level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
-                }*/
-
-                level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
+                    level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
+                }
             }
 
         } catch (IOException e) {

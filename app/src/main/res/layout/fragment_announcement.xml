@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/atp_red"
     android:orientation="vertical"
     android:weightSum="100"
     tools:context=".AnnouncementFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
+    <me.grantland.widget.AutofitTextView
         android:id="@+id/tvAnnouncment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:gravity="center"
         android:layout_weight="90"
-        android:text="" />
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:maxLines="8"
+        android:textColor="@color/white"
+        android:padding="40dp"
+        android:text=""
+        android:textSize="25sp"
+        app:minTextSize="18sp" />
 
     <Button
         android:id="@+id/btOK"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="40dp"
         android:layout_weight="10"
-        android:text="" />
-
+        android:background="@color/atp_somon"
+        android:fontFamily="serif-monospace"
+        android:text=""
+        android:textAllCaps="true"
+        android:textSize="24sp" />
 
 
 </LinearLayout>

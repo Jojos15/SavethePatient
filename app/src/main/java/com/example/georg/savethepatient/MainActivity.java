@@ -121,8 +121,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void switchLevel(long timePassed, String text){
-        AnnouncementFragment announcementFragment = new AnnouncementFragment(text, timePassed);
+    public void switchLevel( String text){
+        AnnouncementFragment announcementFragment = new AnnouncementFragment(text, timeInSeconds);
         manager.beginTransaction().setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left).replace(R.id.fullscreen_content, announcementFragment).commit();
 
 

@@ -56,11 +56,12 @@ public class QuizFragment extends Fragment {
     private ImageView heart1;
     private ImageView heart2;
     private ImageView heart3;
+    private boolean aboutToLoose = false;
     private CountDownTimer countDownTimer = new CountDownTimer(46000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
             progressI++;
-            timerText.setText((int)ceil(millisUntilFinished/1000) +"");
+            timerText.setText((int) ceil(millisUntilFinished / 1000) + "");
             timer.setProgress(100 - (progressI * 100 / 46));
         }
 
@@ -80,31 +81,28 @@ public class QuizFragment extends Fragment {
 
         @Override
         public void run() {
-            try{
-                long raw = ((MainActivity)getActivity()).getTimeInSeconds();
-                long min = raw/60;
+            try {
+                long raw = ((MainActivity) getActivity()).getTimeInSeconds();
+                long min = raw / 60;
                 long secs = raw % 60;
                 String seconds;
                 String minutes;
 
-                if(secs<10) seconds = "0" + Long.toString(secs);
+                if (secs < 10) seconds = "0" + Long.toString(secs);
                 else seconds = Long.toString(secs);
 
-                if(min<10) minutes = "0" + Long.toString(min);
+                if (min < 10) minutes = "0" + Long.toString(min);
                 else minutes = Long.toString(min);
 
                 tvOverallTime.setText(minutes + ":" + seconds);
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 // TODO: handle exception
-            }
-            finally{
+            } finally {
                 //also call the same runnable to call it at regular interval
                 handler.postDelayed(this, 1000);
             }
         }
     };
-
 
 
     public QuizFragment(int level, int levelTime, long overallTime) {
@@ -141,10 +139,9 @@ public class QuizFragment extends Fragment {
         heart2 = view.findViewById(R.id.imageView2);
         heart3 = view.findViewById(R.id.imageView3);
 
-        if(level == 2){
+        if (level == 2) {
             heart1.setVisibility(View.GONE);
-        }
-        else if(level == 3){
+        } else if (level == 3) {
             heart1.setVisibility(View.GONE);
             heart2.setVisibility(View.GONE);
         }
@@ -231,7 +228,7 @@ public class QuizFragment extends Fragment {
         cardStackView.setAdapter(funDapter);
         cardStackView.setBackgroundColor(Color.TRANSPARENT);
         countDownTimer.start();
-        timerText.setText(levelTime+"");
+        timerText.setText(levelTime + "");
 
 
         cardStackView.setCardEventListener(new CardStackView.CardEventListener() {
@@ -243,7 +240,7 @@ public class QuizFragment extends Fragment {
 
             @Override
             public void onCardSwiped(final SwipeDirection direction) {
-                if(questions.size()!=1) {
+                if (questions.size() != 1) {
                     if (cardCount % 2 == 0) {
                         cardStackView.setEnabled(false);
                         countDownTimer.cancel();
@@ -256,30 +253,33 @@ public class QuizFragment extends Fragment {
                             questions.get(1).setQuest("Σωστό");
                         } else {
                             questions.get(1).setQuest("Λάθος");
-                            questions.get(1).setTextToDisplay(onWrongAnswer());
+                        questions.get(1).setTextToDisplay( onWrongAnswer() + "\n\n" + "Σωστη απαντηση: " + questions.get(0).getRightAnswer());
                         }
-                        swipeCard.schedule(new TimerTask() {
-                            @Override
-                            public void run() {
-                                swipeRight();
-                            }
-                        }, 3000);
+
+                        if (!(questions.get(0).getQuest().equals("Λάθος") && aboutToLoose)) {
+                            swipeCard.schedule(new TimerTask() {
+                                @Override
+                                public void run() {
+                                    swipeRight();
+                                }
+                            }, 3000);
+                        }
 
                     }
                     questions.remove(0);
                     funDapter.updateData(questions);
                     Log.d("fundapter", "Updated");
                     cardCount++;
-                }
-                else{
-                    if(level==1) {
-                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.second_level_intro));
-                    }
-                    else if(level==2){
-                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.third_level_intro));
-                    }
-                    else if(level == 3){
-                        ((MainActivity) getActivity()).switchLevel(Integer.parseInt(tvOverallTime.getText().toString()),getString(R.string.you_won));
+                } else {
+                    if (level == 1) {
+                        ((MainActivity) getActivity()).switchLevel(getString(R.string.second_level_intro));
+                        onDestroy();
+                    } else if (level == 2) {
+                        ((MainActivity) getActivity()).switchLevel(getString(R.string.third_level_intro));
+                        onDestroy();
+                    } else if (level == 3) {
+                        ((MainActivity) getActivity()).switchLevel(getString(R.string.you_won));
+                        onDestroy();
                     }
                 }
             }
@@ -348,7 +348,7 @@ public class QuizFragment extends Fragment {
                 overlayAnimationSet.playTogether(overlayAnimator);
                 cardStackView.swipe(SwipeDirection.Right, cardAnimationSet, overlayAnimationSet);
                 Log.d("card", "swiped");
-                if(!timeFinished) {
+                if (!timeFinished) {
                     tvQuestion.setText("Ερώτηση " + (cardCount / 2 + 2));
                     progressI = 0;
                     countDownTimer.start();
@@ -358,58 +358,55 @@ public class QuizFragment extends Fragment {
         });
     }
 
-    public String onWrongAnswer(){
+    public String onWrongAnswer() {
         String text = "";
-        if(level == 1){
-            if(((MainActivity)getActivity()).getLives(0)){
+        if (level == 1) {
+            if (((MainActivity) getActivity()).getLives(0)) {
                 text = getString(R.string.first_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 0);
+                ((MainActivity) getActivity()).setLives(false, 0);
                 heart1.setImageResource(R.drawable.ic_heart_grey);
-            }
-            else if(((MainActivity)getActivity()).getLives(1)){
+            } else if (((MainActivity) getActivity()).getLives(1)) {
                 text = getString(R.string.second_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 1);
+                ((MainActivity) getActivity()).setLives(false, 1);
                 heart2.setImageResource(R.drawable.ic_heart_grey);
-            }
-            else if(((MainActivity)getActivity()).getLives(2)){
+            } else if (((MainActivity) getActivity()).getLives(2)) {
                 text = getString(R.string.third_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 2);
+                ((MainActivity) getActivity()).setLives(false, 2);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
+                aboutToLoose = true;
+            } else {
+                ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
+                onDestroy();
             }
-            else{ //LOOSE
-
-            }
-        }
-        else if(level == 2){
-            if(((MainActivity)getActivity()).getLives(3)){
+        } else if (level == 2) {
+            if (((MainActivity) getActivity()).getLives(3)) {
                 text = getString(R.string.first_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 3);
+                ((MainActivity) getActivity()).setLives(false, 3);
                 heart2.setImageResource(R.drawable.ic_heart_grey);
-            }
-            else if(((MainActivity)getActivity()).getLives(4)){
+            } else if (((MainActivity) getActivity()).getLives(4)) {
                 text = getString(R.string.third_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 4);
+                ((MainActivity) getActivity()).setLives(false, 4);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
+                aboutToLoose = true;
+            } else { //LOOSE
+                ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
+                onDestroy();
             }
-            else{ //LOOSE
-
-            }
-        }
-        else {
-            if(((MainActivity)getActivity()).getLives(5)){
+        } else {
+            if (((MainActivity) getActivity()).getLives(5)) {
                 text = getString(R.string.third_life_lost);
-                ((MainActivity)getActivity()).setLives(false, 5);
+                ((MainActivity) getActivity()).setLives(false, 5);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
+                aboutToLoose = true;
 
-            }
-            else{ //LOOSE
-
+            } else { //LOOSE
+                ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
+                onDestroy();
             }
         }
 
         return text;
     }
-
 
 
     private int numberfyDirection(SwipeDirection direction) {

@@ -10,4 +10,6 @@
     <color name="black">#000000</color>
     <color name="dark_grey">#263238</color>
     <color name="heart_red">#c62828</color>
+    <color name="atp_red">#590022</color>
+    <color name="atp_somon">#fdf4c9</color>
 </resources>

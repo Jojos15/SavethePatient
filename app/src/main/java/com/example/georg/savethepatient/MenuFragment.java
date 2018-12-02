@@ -35,7 +35,7 @@ public class MenuFragment extends Fragment {
         btStartGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)getActivity()).switchLevel(0, getString(R.string.first_level_intro));
+                ((MainActivity)getActivity()).switchLevel(getString(R.string.first_level_intro));
             }
         });
 

@@ -24,6 +24,10 @@
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_savethepatient_insideapp.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\drawable\\savethepatient_insideapp.png"
+    },
+    {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\layout_overlay_left.xml.flat",
         "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\layout\\overlay_left.xml"
     },
@@ -340,16 +344,20 @@
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\8c1cdc068ea2a117a1ed336d8dc66a95\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_savethepatientlogo_appicon.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\drawable\\savethepatientlogo_appicon.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_gamma.png.flat",
@@ -532,8 +540,16 @@
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\8c1cdc068ea2a117a1ed336d8dc66a95\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable_savethepatientlogo_appicon_white.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\drawable\\savethepatientlogo_appicon_white.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
@@ -720,12 +736,12 @@
         "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\drawable-mdpi\\ic_gamma.png"
     },
     {
-        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -778,6 +794,10 @@
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -990,6 +1010,10 @@
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ac675ccad597526a6560492b63294d37\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1226,6 +1250,10 @@
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\raw_level3.csv.flat",
         "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\raw\\level3.csv"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1486,6 +1514,10 @@
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\8490cc6f86ee478813dc3ce5fcbd75b9\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\georg\\AndroidStudioProjects\\SavethePatient\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",

@@ -44,19 +44,19 @@ public class AnnouncementFragment extends Fragment {
         tvAnnouncment.setText(text);
 
         if(text.equals(getString(R.string.first_level_intro))) {
-            next.setText("Πάμε!");
+            next.setText("Παμε!");
         }
         else if(text.equals(getString(R.string.second_level_intro))) {
-            next.setText("Πάμε!");
+            next.setText("Παμε!");
         }
         else if(text.equals(getString(R.string.third_level_intro))){
-            next.setText("Πάμε!");
+            next.setText("Παμε!");
         }
         else if(text.equals(getString(R.string.you_lost))){
-            next.setText("Μενού");
+            next.setText("Μενου");
         }
         else if(text.equals(getString(R.string.you_won))){
-            next.setText("Μενού");
+            next.setText("Μενου");
         }
 
         next.setOnClickListener(new View.OnClickListener() {

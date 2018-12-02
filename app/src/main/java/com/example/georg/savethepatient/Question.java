@@ -41,6 +41,16 @@ public class Question {
         return type[index];
     }
 
+    public String getRightAnswer(){
+        String temp = "";
+        for(int i =0; i<type.length; i++){
+            if(type[i] == QuestionLoader.RIGHT){
+                temp = answers[i];
+            }
+        }
+        return temp;
+    }
+
     public boolean isHasAnswers() {
         return hasAnswers;
     }

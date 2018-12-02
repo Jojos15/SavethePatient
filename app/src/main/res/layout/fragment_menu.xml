@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/atp_red"
     android:orientation="vertical"
     android:weightSum="100"
     tools:context=".MenuFragment">
@@ -11,29 +14,49 @@
         android:id="@+id/ivLogoStartScreen"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="50"/>
+        android:layout_weight="50"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/savethepatient_insideapp" />
 
     <Button
         android:id="@+id/btStartGame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="20"
+        android:background="@color/atp_somon"
+        android:elevation="4dp"
+        android:fontFamily="monospace"
         android:text="Εκκίνηση Παιχνιδιού"
-        android:layout_weight="20"/>
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btManual"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:text="Οδηγίες"
-        android:layout_weight="15"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="15"
+        android:background="@color/atp_somon"
+        android:elevation="4dp"
+        android:fontFamily="monospace"
+        android:text="Οδηγίες" />
 
     <Button
         android:id="@+id/btAbout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:text="Σχετικά με την Εφαρμογή"
-        android:layout_weight="15"/>
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="15"
+        android:elevation="4dp"
+        android:background="@color/atp_somon"
+        android:fontFamily="monospace"
+        android:text="Σχετικά με την Εφαρμογή" />
 </LinearLayout>

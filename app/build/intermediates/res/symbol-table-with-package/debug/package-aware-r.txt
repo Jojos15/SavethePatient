@@ -352,6 +352,8 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color atp_red
+color atp_somon
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -386,6 +388,7 @@ color heart_red
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color holo_purple
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -654,6 +657,9 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_corners_background
+drawable savethepatient_insideapp
+drawable savethepatientlogo_appicon
+drawable savethepatientlogo_appicon_white
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -895,6 +901,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 raw level1
 raw level2

@@ -54,6 +54,7 @@
                         android:layout_height="0dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:fontFamily="monospace"
                         android:gravity="center"
                         android:text="TextView"
                         android:textAlignment="center"
@@ -65,10 +66,12 @@
                         android:layout_height="0dp"
                         android:layout_gravity="center"
                         android:layout_weight="1"
+                        android:fontFamily="monospace"
                         android:gravity="center"
                         android:text="TextView"
                         android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <RelativeLayout
@@ -111,6 +114,8 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:elevation="8dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
                         android:src="@drawable/ic_heart" />
 
                     <ImageView
@@ -120,6 +125,8 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:elevation="8dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
                         android:src="@drawable/ic_heart" />
 
                     <ImageView
@@ -129,6 +136,8 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:elevation="8dp"
+                        android:paddingStart="2dp"
+                        android:paddingLeft="2dp"
                         android:src="@drawable/ic_heart" />
                 </TableRow>
 
@@ -150,7 +159,8 @@
                 android:gravity="center"
                 android:text="Α"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -164,11 +174,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:gravity="center"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Δ"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <com.yuyakaido.android.cardstackview.CardStackView
                 android:id="@+id/quiz_main_card_stack_view"
@@ -196,11 +207,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:gravity="center"
                 android:text="B"
-                android:layout_weight="1"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -219,7 +231,8 @@
                 android:gravity="center"
                 android:text="Γ"
                 android:textAlignment="center"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
         </TableRow>
 
         <LinearLayout
@@ -237,6 +250,7 @@
                 android:gravity="top|center_vertical"
                 android:paddingEnd="16dp"
                 android:textAlignment="viewEnd"
+                android:textColor="@color/cardview_light_background"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
