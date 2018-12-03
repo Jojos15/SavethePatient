@@ -134,6 +134,11 @@ public class QuestionLoader {
                 String[] questions = line.split(cvsSplitBy);
                 if (questions[0].indexOf('*') == 0) {
                     int a1 = WRONG, a2 = IMPLICATION, a3 = WRONG, a4 = WRONG;
+                    for(int i=0; i<4; i++){
+                        while(questions[i].indexOf('#')>0){
+                            questions[i].replace('#', ',');
+                        }
+                    }
 
                     if (questions[1].indexOf('!') == 0){
                         a1 = RIGHT;

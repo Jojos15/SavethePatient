@@ -57,6 +57,7 @@ public class QuizFragment extends Fragment {
     private ImageView heart2;
     private ImageView heart3;
     private boolean aboutToLoose = false;
+    private boolean lost = false;
     private CountDownTimer countDownTimer = new CountDownTimer(46000, 1000) {
         @Override
         public void onTick(long millisUntilFinished) {
@@ -242,6 +243,7 @@ public class QuizFragment extends Fragment {
             public void onCardSwiped(final SwipeDirection direction) {
                 if (questions.size() != 1) {
                     if (cardCount % 2 == 0) {
+                        lost = false;
                         cardStackView.setEnabled(false);
                         countDownTimer.cancel();
                         Timer swipeCard = new Timer();
@@ -253,10 +255,11 @@ public class QuizFragment extends Fragment {
                             questions.get(1).setQuest("Σωστό");
                         } else {
                             questions.get(1).setQuest("Λάθος");
+
                         questions.get(1).setTextToDisplay( onWrongAnswer() + "\n\n" + "Σωστη απαντηση: " + questions.get(0).getRightAnswer());
                         }
 
-                        if (!(questions.get(0).getQuest().equals("Λάθος") && aboutToLoose)) {
+                        if (!(lost && aboutToLoose)) {
                             swipeCard.schedule(new TimerTask() {
                                 @Override
                                 public void run() {
