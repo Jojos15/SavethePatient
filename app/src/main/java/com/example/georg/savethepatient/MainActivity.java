@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         menuFragment = new MenuFragment();
         manager = getSupportFragmentManager();
 
-        manager.beginTransaction().replace(R.id.fullscreen_content, menuFragment).commit();
     }
 
 
@@ -84,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, 100);
 
+        goToMenu();
     }
 
     public long getTimeInSeconds() {
@@ -98,10 +98,6 @@ public class MainActivity extends AppCompatActivity {
         this.lives[pos] = lives;
     }
 
-    public long getLevelTime(){
-        return levelTime;
-    }
-
     public void switchLevel(long timePassed, int level){
         if(timeInSeconds == 0){
             handler.post(runnable);
@@ -109,13 +105,13 @@ public class MainActivity extends AppCompatActivity {
         else timeInSeconds = timePassed;
         int levelTime;
         if(level == 1) {
-         levelTime = 45;
+         levelTime = 30;
         }
         else if(level==2){
-            levelTime = 30;
+            levelTime = 45;
         }
-        else levelTime = 30;
-        QuizFragment quizFragment = new QuizFragment(level, levelTime, timePassed);
+        else levelTime = 60;
+        QuizFragment quizFragment = new QuizFragment(level, levelTime);
         manager.beginTransaction().setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left).replace(R.id.fullscreen_content, quizFragment).commit();
 
 
@@ -126,6 +122,14 @@ public class MainActivity extends AppCompatActivity {
         manager.beginTransaction().setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left).replace(R.id.fullscreen_content, announcementFragment).commit();
 
 
+    }
+
+    public void goToMenu(){
+        manager.beginTransaction().replace(R.id.fullscreen_content, menuFragment).commit();
+    }
+
+    public boolean[] getLives() {
+        return lives;
     }
 }
 

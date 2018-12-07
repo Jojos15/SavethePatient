@@ -39,6 +39,9 @@ public class QuestionLoader {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] questions = line.split(cvsSplitBy);
+                for(int i=0; i<4; i++){
+                       questions[i] =  questions[i].replace('#', ',');
+                }
                 if (questions[0].indexOf('*') == 0) {
                     int a1 = WRONG, a2 = WRONG, a3 = WRONG, a4 = WRONG;
 
@@ -71,7 +74,7 @@ public class QuestionLoader {
 
                     level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
+                    level1.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
@@ -86,6 +89,9 @@ public class QuestionLoader {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] questions = line.split(cvsSplitBy);
+                for(int i=0; i<4; i++){
+                    questions[i] = questions[i].replace('#', ',');
+                }
                 if (questions[0].indexOf('*') == 0) {
                     int a1 = WRONG, a2 = WRONG, a3 = WRONG, a4 = WRONG;
 
@@ -117,7 +123,7 @@ public class QuestionLoader {
                     int[] temp = new int[]{a1, a2, a3, a4};
                     level2.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level2.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
+                    level2.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
@@ -132,13 +138,11 @@ public class QuestionLoader {
             while ((line = br.readLine()) != null) {
                 // use comma as separator
                 String[] questions = line.split(cvsSplitBy);
+                for(int i=0; i<4; i++){
+                    questions[i] = questions[i].replace('#', ',');
+                }
                 if (questions[0].indexOf('*') == 0) {
                     int a1 = WRONG, a2 = IMPLICATION, a3 = WRONG, a4 = WRONG;
-                    for(int i=0; i<4; i++){
-                        while(questions[i].indexOf('#')>0){
-                            questions[i].replace('#', ',');
-                        }
-                    }
 
                     if (questions[1].indexOf('!') == 0){
                         a1 = RIGHT;
@@ -163,7 +167,48 @@ public class QuestionLoader {
 
                     level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
+                    level3.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
+                }
+
+                line = br.readLine();
+
+                questions = line.split(cvsSplitBy);
+                for(int i=0; i<4; i++){
+                    questions[i] = questions[i].replace('#', ',');
+                }
+                if (questions[0].indexOf('*') == 0) {
+                    int a1 = WRONG, a2 = WRONG, a3 = WRONG, a4 = WRONG;
+
+                    if (questions[1].indexOf('!') == 0){
+                        a1 = RIGHT;
+                        StringBuilder st = new StringBuilder(questions[1]);
+                        st.deleteCharAt(0);
+                        questions[1] = st.toString();
+                    }
+                    else if (questions[2].indexOf('!') == 0){
+                        a1 = RIGHT;
+                        StringBuilder st = new StringBuilder(questions[1]);
+                        st.deleteCharAt(0);
+                        questions[2] = st.toString();
+                    }
+                    else if (questions[3].indexOf('!') == 0){
+                        a3 = RIGHT;
+                        StringBuilder st = new StringBuilder(questions[3]);
+                        st.deleteCharAt(0);
+                        questions[3] = st.toString();
+                    }
+                    else{
+                        a4 = RIGHT;
+                        StringBuilder st = new StringBuilder(questions[4]);
+                        st.deleteCharAt(0);
+                        questions[4] = st.toString();
+                    }
+
+                    int[] temp = new int[]{a1, a2, a3, a4};
+
+                    level3.get(level3.size()-1).setImplication(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
+                } else {
+                    level3.get(level3.size()-1).setImplication(new Question("!" +questions[1], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
@@ -181,11 +226,11 @@ public class QuestionLoader {
 
         switch (level) {
             case 1:
-                return shuffleQuestions(10, level1);
+                return shuffleQuestions(9, level1);
             case 2:
-                return shuffleQuestions(8, level2);
+                return shuffleQuestions(7, level2);
             case 3:
-                return shuffleQuestions(5, level3);
+                return shuffleQuestions(4, level3);
             default:
                 return null;
 
@@ -210,14 +255,27 @@ public class QuestionLoader {
             }
             else {
                 temp.add(shuffleAnswers(questions.get(positions.get(pos))));
+                if(count == 4){
+                    temp.get(temp.size()-1).setImplication(shuffleAnswers(questions.get(positions.get(pos)).getImplication()));
+                }
             }
             positions.remove(pos);
             if (counter == count) {
                 break;
             } else counter++;
         }
+        if(count == 4){
+            for(int i=0; i<4; i++){
+                if(temp.get(i).getImplication().getQuest().indexOf('*') == 0){
+                    StringBuilder st = new StringBuilder(temp.get(i).getImplication().getQuest());
+                    st.deleteCharAt(0);
+                    temp.get(i).getImplication().setQuest(st.toString());
+                }
+            }
+        }
         return temp;
     }
+
 
     private Question shuffleAnswers(Question question) {
         Random rnd = ThreadLocalRandom.current();

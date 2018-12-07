@@ -7,11 +7,19 @@ public class Question {
     private int[] type;
     private boolean hasAnswers = true;
     private String textToDisplay = null;
+    private Question implication = null;
 
     public Question(String quest, String[] answers, int[] type){
         this.quest = quest;
         this.answers = answers;
         this.type = type;
+    }
+
+    public Question(String quest, String[] answers, int[] type, Question implication){
+        this.quest = quest;
+        this.answers = answers;
+        this.type = type;
+        this.implication = implication;
     }
 
     public Question(String quest, String textToDisplay){
@@ -69,5 +77,13 @@ public class Question {
 
     public void setTextToDisplay(String textToDisplay) {
         this.textToDisplay = textToDisplay;
+    }
+
+    public Question getImplication() {
+        return implication;
+    }
+
+    public void setImplication(Question implication) {
+        this.implication = implication;
     }
 }

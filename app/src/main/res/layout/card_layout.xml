@@ -31,22 +31,22 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="60"
+        android:clipToPadding="true"
         android:orientation="vertical">
 
         <me.grantland.widget.AutofitTextView
             android:id="@+id/tvIfWrong"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="8"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
             android:paddingBottom="16dp"
-            android:layout_height="match_parent"
-            android:visibility="gone"
-            android:maxLines="8"
-            android:textSize="35sp"
-            android:gravity="center"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            app:minTextSize="12sp"
-            />
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:minTextSize="12sp" />
 
         <TableRow
             android:layout_width="match_parent"

@@ -56,26 +56,8 @@ public class QuizFragment extends Fragment {
     private ImageView heart1;
     private ImageView heart2;
     private ImageView heart3;
-    private boolean aboutToLoose = false;
     private boolean lost = false;
-    private CountDownTimer countDownTimer = new CountDownTimer(46000, 1000) {
-        @Override
-        public void onTick(long millisUntilFinished) {
-            progressI++;
-            timerText.setText((int) ceil(millisUntilFinished / 1000) + "");
-            timer.setProgress(100 - (progressI * 100 / 46));
-        }
-
-        @Override
-        public void onFinish() {
-            //Do what you want
-            progressI++;
-            timer.setProgress(0);
-            timerText.setText("0");
-            timeFinished = true;
-            swipeRight();
-        }
-    };
+    private CountDownTimer countDownTimer;
 
     final Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -84,18 +66,9 @@ public class QuizFragment extends Fragment {
         public void run() {
             try {
                 long raw = ((MainActivity) getActivity()).getTimeInSeconds();
-                long min = raw / 60;
-                long secs = raw % 60;
-                String seconds;
-                String minutes;
 
-                if (secs < 10) seconds = "0" + Long.toString(secs);
-                else seconds = Long.toString(secs);
 
-                if (min < 10) minutes = "0" + Long.toString(min);
-                else minutes = Long.toString(min);
-
-                tvOverallTime.setText(minutes + ":" + seconds);
+                tvOverallTime.setText(timeFormater(raw));
             } catch (Exception e) {
                 // TODO: handle exception
             } finally {
@@ -106,7 +79,7 @@ public class QuizFragment extends Fragment {
     };
 
 
-    public QuizFragment(int level, int levelTime, long overallTime) {
+    public QuizFragment(int level, int levelTime) {
         this.level = level;
         this.levelTime = levelTime;
     }
@@ -141,10 +114,10 @@ public class QuizFragment extends Fragment {
         heart3 = view.findViewById(R.id.imageView3);
 
         if (level == 2) {
-            heart1.setVisibility(View.GONE);
+            heart1.setVisibility(View.INVISIBLE);
         } else if (level == 3) {
-            heart1.setVisibility(View.GONE);
-            heart2.setVisibility(View.GONE);
+            heart1.setVisibility(View.INVISIBLE);
+            heart2.setVisibility(View.INVISIBLE);
         }
 
         loadLevel(level);
@@ -154,6 +127,24 @@ public class QuizFragment extends Fragment {
 
         handler.post(runnable);
 
+         countDownTimer = new CountDownTimer((levelTime + 1) * 1000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                progressI++;
+                timerText.setText((int) ceil(millisUntilFinished / 1000) + "");
+                timer.setProgress(100 - (progressI * 100 / 46));
+            }
+
+            @Override
+            public void onFinish() {
+                //Do what you want
+                progressI++;
+                timer.setProgress(0);
+                timerText.setText("0");
+                timeFinished = true;
+                swipeRight();
+            }
+        };
 
         BindDictionary<Question> bindDictionary = new BindDictionary<>();
 
@@ -253,13 +244,35 @@ public class QuizFragment extends Fragment {
                             timeFinished = false;
                         } else if (questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.RIGHT) {
                             questions.get(1).setQuest("Σωστό");
-                        } else {
+                        }
+                        else if(questions.get(0).getType(numberfyDirection(direction)) == QuestionLoader.IMPLICATION){
+                            questions.get(1).setQuest("Επιπλοκή");
+                            questions.set(2, questions.get(0).getImplication());
+                            questions.get(1).setTextToDisplay(getString(R.string.there_was_an_implication));
+                        }
+                        else {
                             questions.get(1).setQuest("Λάθος");
 
-                        questions.get(1).setTextToDisplay( onWrongAnswer() + "\n\n" + "Σωστη απαντηση: " + questions.get(0).getRightAnswer());
+                            if(level==1){
+                                if(!((MainActivity) getActivity()).getLives(2)){
+                                    lost = true;
+                                }
+                            }
+                            else if(level==2){
+                                if(!((MainActivity) getActivity()).getLives(4)){
+                                    lost = true;
+                                }
+                            }
+                            else{
+                                if(!((MainActivity) getActivity()).getLives(5)){
+                                    lost = true;
+                                }
+                            }
+
+                            questions.get(1).setTextToDisplay( onWrongAnswer() + "\n\n" + "Σωστη απαντηση: " + questions.get(0).getRightAnswer());
                         }
 
-                        if (!(lost && aboutToLoose)) {
+                        if (!(lost)) {
                             swipeCard.schedule(new TimerTask() {
                                 @Override
                                 public void run() {
@@ -281,7 +294,9 @@ public class QuizFragment extends Fragment {
                         ((MainActivity) getActivity()).switchLevel(getString(R.string.third_level_intro));
                         onDestroy();
                     } else if (level == 3) {
-                        ((MainActivity) getActivity()).switchLevel(getString(R.string.you_won));
+                        ((MainActivity) getActivity()).switchLevel(getString(R.string.you_won)
+                                + "\n\nΣυνολικός Χρόνος: " + tvOverallTime.getText().toString()
+                                + "\n\nΚαρδιές που απομένουν: " + countHearts());
                         onDestroy();
                     }
                 }
@@ -308,7 +323,8 @@ public class QuizFragment extends Fragment {
 
     @Override
     public void onDestroy() {
-
+        countDownTimer.cancel();
+        handler.removeCallbacks(runnable);
         super.onDestroy();
     }
 
@@ -376,7 +392,7 @@ public class QuizFragment extends Fragment {
                 text = getString(R.string.third_life_lost);
                 ((MainActivity) getActivity()).setLives(false, 2);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
-                aboutToLoose = true;
+
             } else {
                 ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
                 onDestroy();
@@ -390,7 +406,7 @@ public class QuizFragment extends Fragment {
                 text = getString(R.string.third_life_lost);
                 ((MainActivity) getActivity()).setLives(false, 4);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
-                aboutToLoose = true;
+
             } else { //LOOSE
                 ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
                 onDestroy();
@@ -400,7 +416,7 @@ public class QuizFragment extends Fragment {
                 text = getString(R.string.third_life_lost);
                 ((MainActivity) getActivity()).setLives(false, 5);
                 heart3.setImageResource(R.drawable.ic_heart_grey);
-                aboutToLoose = true;
+
 
             } else { //LOOSE
                 ((MainActivity) getActivity()).switchLevel(getString(R.string.you_lost));
@@ -417,5 +433,33 @@ public class QuizFragment extends Fragment {
         else if (direction == SwipeDirection.Right) return 1;
         else if (direction == SwipeDirection.Bottom) return 2;
         else return 3;
+    }
+
+    public String timeFormater(long timeToConvert){
+        long min = timeToConvert / 60;
+        long secs = timeToConvert % 60;
+        String seconds;
+        String minutes;
+
+        if (secs < 10) seconds = "0" + Long.toString(secs);
+        else seconds = Long.toString(secs);
+
+        if (min < 10) minutes = "0" + Long.toString(min);
+        else minutes = Long.toString(min);
+
+        return (minutes + ":" + seconds);
+    }
+
+    private int countHearts(){
+        int border = ((MainActivity)getActivity()).getLives().length - 1;
+
+        int sum = 0;
+        for(int i = 0; i<border; i++){
+            if(((MainActivity)getActivity()).getLives(i)){
+                sum++;
+            }
+        }
+
+        return sum;
     }
 }

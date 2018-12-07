@@ -55,7 +55,7 @@ public class AnnouncementFragment extends Fragment {
         else if(text.equals(getString(R.string.you_lost))){
             next.setText("Μενου");
         }
-        else if(text.equals(getString(R.string.you_won))){
+        else {
             next.setText("Μενου");
         }
 
@@ -72,10 +72,11 @@ public class AnnouncementFragment extends Fragment {
                     ((MainActivity) getActivity()).switchLevel(timePassed, 3);
                 }
                 else if(text.equals(getString(R.string.you_lost))){
+                    ((MainActivity)getActivity()).goToMenu();
 
                 }
-                else if(text.equals(getString(R.string.you_won))){
-
+                else{
+                    ((MainActivity)getActivity()).goToMenu();
                 }
             }
         });
