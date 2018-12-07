@@ -74,7 +74,7 @@ public class QuestionLoader {
 
                     level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level1.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
+                    level1.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
@@ -123,7 +123,7 @@ public class QuestionLoader {
                     int[] temp = new int[]{a1, a2, a3, a4};
                     level2.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level2.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
+                    level2.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
@@ -167,7 +167,7 @@ public class QuestionLoader {
 
                     level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level3.add(new Question(questions[0], new String[]{"!" +questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
+                    level3.add(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, IMPLICATION, WRONG, WRONG}));
                 }
 
                 line = br.readLine();
@@ -208,7 +208,7 @@ public class QuestionLoader {
 
                     level3.get(level3.size()-1).setImplication(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, temp));
                 } else {
-                    level3.get(level3.size()-1).setImplication(new Question("!" +questions[1], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
+                    level3.get(level3.size()-1).setImplication(new Question(questions[0], new String[]{questions[1], questions[2], questions[3], questions[4]}, new int[]{RIGHT, WRONG, WRONG, WRONG}));
                 }
             }
 
